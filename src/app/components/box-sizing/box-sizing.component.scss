@@ -1,0 +1,70 @@
+:host {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //flex-flow: column;
+}
+
+.box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 75rem;
+  perspective-origin: 50% calc(50% - 20em);
+  height: 15rem;
+  width: 15rem;
+}
+
+$boxX: 5rem;
+$boxY: 5rem;
+$boxZ: 5rem;
+
+
+
+$boxWidth: 6rem;
+$boxheight: 6rem;
+
+.box {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  position: absolute;
+  transform: rotatey(-36deg);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .side {
+    position: absolute;
+    opacity: 0.5;
+  }
+}
+
+.front {
+  background: red;
+}
+.back {
+  background: green;
+}
+
+.right {
+  background: yellow;
+}
+.left {
+  background: blue;
+}
+
+.top {
+  background: pink;
+}
+
+.bottom {
+  //width: $boxX;
+  //height: $boxZ;
+  background: #0007;
+  //bottom: 0;
+  //transform: translateY($boxY/2) ;
+  //transform: rotateX(90deg);
+}
