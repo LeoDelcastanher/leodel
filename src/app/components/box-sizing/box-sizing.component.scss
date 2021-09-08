@@ -1,9 +1,8 @@
 :host {
-  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
-  //flex-flow: column;
+  flex-flow: column;
 }
 
 .box-container {
@@ -11,7 +10,7 @@
   align-items: center;
   justify-content: center;
   perspective: 75rem;
-  perspective-origin: 50% calc(50% - 20em);
+  perspective-origin: 50% calc(50% - 24em);
   height: 15rem;
   width: 15rem;
 }
@@ -67,4 +66,12 @@ $boxheight: 6rem;
   //bottom: 0;
   //transform: translateY($boxY/2) ;
   //transform: rotateX(90deg);
+}
+
+.tweak-tools {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
 }

@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { BoxSizingComponent } from './components/box-sizing/box-sizing.component';
 import {FormsModule} from "@angular/forms";
+import { TopPartComponent } from './components/top-part/top-part.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    BoxSizingComponent
+    BoxSizingComponent,
+    TopPartComponent
   ],
     imports: [
         BrowserModule,
