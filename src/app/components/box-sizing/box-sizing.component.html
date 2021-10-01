@@ -1,3 +1,8 @@
+<app-header title="Automatico e Interativo"
+            subTitle="Ajude seus usuarios a compreender suas ideias com a interacao!">
+
+</app-header>
+
 <div class="cool-block">
   <div class="box-container">
     <div class="box">
@@ -13,7 +18,7 @@
 
 <div class="tweak-tools">
   <p>{{boxSpecs | json}}</p>
-  <p>x<input type="range" [(ngModel)]="boxSpecs.x"></p>
-  <p>y<input type="range" [(ngModel)]="boxSpecs.y"></p>
-  <p>z<input type="range" [(ngModel)]="boxSpecs.z"></p>
+  <p>x<input type="range" [(ngModel)]="boxSpecs.x" min="1" max="200"></p>
+  <p>y<input type="range" [(ngModel)]="boxSpecs.y" min="1" max="200"></p>
+  <p>z<input type="range" [(ngModel)]="boxSpecs.z" min="1" max="200"></p>
 </div>

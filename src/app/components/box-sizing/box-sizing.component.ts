@@ -7,9 +7,9 @@ import {Component, OnInit} from '@angular/core';
 })
 export class BoxSizingComponent implements OnInit {
   boxSpecs = {
-    x: 10 * 5,
-    y: 10 * 5,
-    z: 10 * 5,
+    x: 10 * 10,
+    y: 10 * 10,
+    z: 10 * 10,
   };
 
   boxStyles = {front: {}, back: {}, right: {}, left: {}, top: {}, bottom: {},};

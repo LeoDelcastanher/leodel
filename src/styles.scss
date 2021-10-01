@@ -45,10 +45,10 @@
 }
 
 html {
-  background: $niceWhite;
+  background: $darkBack;
   font-size: 10px;
   font-family: "Roboto";
-  color: $grey-800;
+  color: $simple;
 }
 
 body {
@@ -57,15 +57,18 @@ body {
 
 h1 {
   font-size: 3.6rem;
+  line-height: 3.8rem;
 }
 h2 {
   font-size: 2.8rem;
+  line-height: 3.0rem;
 }
 h3 {
   font-size: 2.4rem;
+  line-height: 2.6rem;
 }
 
 p {
   font-size: 1.6rem;
-  line-height: 1.6rem;
+  line-height: 1.8rem;
 }

@@ -7,13 +7,15 @@ import { MainComponent } from './main/main.component';
 import { BoxSizingComponent } from './components/box-sizing/box-sizing.component';
 import {FormsModule} from "@angular/forms";
 import { TopPartComponent } from './components/top-part/top-part.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     BoxSizingComponent,
-    TopPartComponent
+    TopPartComponent,
+    HeaderComponent
   ],
     imports: [
         BrowserModule,
