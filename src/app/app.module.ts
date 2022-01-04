@@ -8,6 +8,7 @@ import { BoxSizingComponent } from './components/box-sizing/box-sizing.component
 import {FormsModule} from "@angular/forms";
 import { TopPartComponent } from './components/top-part/top-part.component';
 import { HeaderComponent } from './components/header/header.component';
+import { MyBtnComponent } from './elements/my-btn/my-btn.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HeaderComponent } from './components/header/header.component';
     MainComponent,
     BoxSizingComponent,
     TopPartComponent,
-    HeaderComponent
+    HeaderComponent,
+    MyBtnComponent
   ],
     imports: [
         BrowserModule,

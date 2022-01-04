@@ -46,29 +46,29 @@
 
     li {
       display: inline-block;
-      position: relative;
+      //position: relative;
       user-select: none;
     }
   }
 
-  span {
-    position: relative;
-    z-index: 5;
-    display: inline-block;
-    padding: 0.8em 1em;
-    background: $secondaryBack;
-    //color: $niceWhite;
-    font-weight: bold;
-    box-shadow: -3px 3px 0px $main;
-
-    &:hover {
-      cursor: pointer;
-    }
-
-    &:active {
-      top: 2px;
-      left: -2px;
-      box-shadow: -1px 1px 0px $main;
-    }
-  }
+  //span {
+  //  position: relative;
+  //  z-index: 5;
+  //  display: inline-block;
+  //  padding: 0.8em 1em;
+  //  background: $secondaryBack;
+  //  //color: $niceWhite;
+  //  font-weight: bold;
+  //  box-shadow: -3px 3px 0px $main;
+  //
+  //  &:hover {
+  //    cursor: pointer;
+  //  }
+  //
+  //  &:active {
+  //    top: 2px;
+  //    left: -2px;
+  //    box-shadow: -1px 1px 0px $main;
+  //  }
+  //}
 }
