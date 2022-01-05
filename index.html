@@ -1,18 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="leoDelApp" ng-controller="mainController">
 <head>
     <meta charset="UTF-8">
     <title>Leo Delcastanher</title>
     <link rel="icon" type="image/png" href="images/LeoDelIcon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#424242" />
+    <meta name="theme-color" content="#424242"/>
     <link rel="stylesheet" href="styles/style.css">
+
+    <script src="node_modules/angular/angular.min.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P5E2FQ1LWX"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'G-P5E2FQ1LWX');
@@ -24,7 +30,7 @@
     <div class="personal-info">
         <div class="profile-picture-box">
             <img class="profile-picture" src="images/Leonardo-Delcastanher_profile-pic.jpg"
-                 alt="Leonardo Delcastanher - Profile Picture">
+                 alt="Leonardo Delcastanher - Profile Picture" loading="lazy">
         </div>
 
         <div class="name-profession">
@@ -33,7 +39,8 @@
             <br>
             <br>
             <a href="https://github.com/LeoDelcastanher" target="_blank" title="Leonardo`s GitHub">GitHub</a>,
-            <a href="https://www.linkedin.com/in/leodelcastanher/" target="_blank" title="Leonardo`s LinkedIn">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/leodelcastanher/" target="_blank"
+               title="Leonardo`s LinkedIn">LinkedIn</a>
         </div>
     </div>
 
@@ -71,7 +78,7 @@
 
     <div class="experience-display">
         <div class="exp-header">
-            <img src="images/UNISUIL_logo.jpg" alt="UNISUL - Logo">
+            <img src="images/UNISUIL_logo.jpg" alt="UNISUL - Logo" loading="lazy">
             <div class="exp-header-info">
                 <h3>UNISUL (College)</h3>
                 <span>2012 - 2016</span>
@@ -84,7 +91,7 @@
 
     <div class="experience-display">
         <div class="exp-header">
-            <img src="images/UFSC_logo.png" alt="UFSC - Logo">
+            <img src="images/UFSC_logo.png" alt="UFSC - Logo" loading="lazy">
             <div class="exp-header-info">
                 <h3>UFSC (Minors)</h3>
                 <span>2021 - Now</span>
@@ -93,7 +100,8 @@
 
         <h4>Minors in Information Technology</h4>
         <p>In 2021 I started my way into my Masters in information technology, currently ongoing online classes and
-            getting to know the mentors and their research. My interests are in Content Detection and Analysis on Big Web Data.</p>
+            getting to know the mentors and their research. My interests are in Content Detection and Analysis on Big
+            Web Data.</p>
     </div>
 </section>
 
@@ -102,7 +110,7 @@
 
     <div class="experience-display">
         <div class="exp-header">
-            <img src="images/CPDI-CDI_logo.png" alt="CPDI / CDI - Logo">
+            <img src="images/CPDI-CDI_logo.png" alt="CPDI / CDI - Logo" loading="lazy">
             <div class="exp-header-info">
                 <h3>CDI (Now CPDI)</h3>
                 <span>2009 - 2010</span>
@@ -119,7 +127,7 @@
 
     <div class="experience-display">
         <div class="exp-header">
-            <img src="images/CIDASC_Logo.jpg" alt="CIDASC - Logo">
+            <img src="images/CIDASC_Logo.jpg" alt="CIDASC - Logo" loading="lazy">
             <div class="exp-header-info">
                 <h3>CIDASC</h3>
                 <span>2012</span>
@@ -128,13 +136,14 @@
 
         <h4>Tech Support</h4>
         <p>Here is where I worked for a service company called Bonatec, that provided tech support for CIDASC. From
-            fixing printers to solving tech crysis through the phone with a farmer all across the state (of Santa Catarina), I did it all.
+            fixing printers to solving tech crysis through the phone with a farmer all across the state (of Santa
+            Catarina), I did it all.
         </p>
     </div>
 
     <div class="experience-display">
         <div class="exp-header">
-            <img src="images/Outplan_logo.png" alt="Outplan - Logo">
+            <img src="images/Outplan_logo.png" alt="Outplan - Logo" loading="lazy">
             <div class="exp-header-info">
                 <h3>Outplan</h3>
                 <span>2013</span>
@@ -149,7 +158,7 @@
 
     <div class="experience-display">
         <div class="exp-header">
-            <img src="images/primesoft_logo.png" alt="Primesoft - Logo">
+            <img src="images/primesoft_logo.png" alt="Primesoft - Logo" loading="lazy">
             <div class="exp-header-info">
                 <h3>Primesoft</h3>
                 <span>2013 - 2016</span>
@@ -165,7 +174,7 @@
 
     <div class="experience-display">
         <div class="exp-header">
-            <img src="images/HarboR_logo.png" alt="HarboR - Logo">
+            <img src="images/HarboR_logo.png" alt="HarboR - Logo" loading="lazy">
             <div class="exp-header-info">
                 <h3>HarboR</h3>
                 <span>2016 - 2020</span>
@@ -183,7 +192,7 @@
 
     <div class="experience-display">
         <div class="exp-header">
-            <img src="images/CIandT_logo.png" alt="CI&T - Logo">
+            <img src="images/CIandT_logo.png" alt="CI&T - Logo" loading="lazy">
             <div class="exp-header-info">
                 <h3>CI&T</h3>
                 <span>2020 - Now</span>
@@ -192,10 +201,13 @@
 
         <h4>Front-End Developer</h4>
         <p>(CI&T bought Dextra just last year)<br>
-            Here I maintain an online marketplace seller software. All in Angular (TypeScript) with its own design system.
+            Here I maintain an online marketplace seller software. All in Angular (TypeScript) with its own design
+            system.
         </p>
     </div>
 </section>
+
+<script src="app/app.js"></script>
 
 </body>
 </html>
