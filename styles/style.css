@@ -42,14 +42,12 @@
 }
 body {
   font-family: Roboto;
-  margin: 4rem 1rem;
+  margin: 4rem 0 0 0;
   color: #424242;
+  font-size: 16px;
   max-width: 720px;
   margin-inline: auto;
-}
-
-section {
-  background: white;
+  padding: 0 1.3rem;
 }
 
 h1 {
@@ -85,27 +83,11 @@ p {
 
 .personal-info {
   display: flex;
+  flex-flow: column;
   align-items: center;
 }
-.personal-info .profile-picture-box {
-  position: relative;
-  padding-bottom: 1rem;
-  margin-right: 1rem;
-}
-.personal-info .profile-picture-box::before {
-  position: absolute;
-  content: "";
-  width: 6rem;
-  height: 10rem;
-  background: #ECEFF1;
-  bottom: 0;
-  transform: translateX(3.5rem);
-}
-.personal-info .profile-picture {
-  position: relative;
-  width: 13rem;
-  height: 13rem;
-  border-radius: 100%;
+.personal-info .name-profession {
+  align-self: flex-start;
 }
 .personal-info .name-profession h1 {
   margin-bottom: 0.3rem;
@@ -114,6 +96,27 @@ p {
   margin-top: 0.3rem;
   font-weight: normal;
   color: #616161;
+}
+
+.profile-picture-box {
+  position: relative;
+  padding-bottom: 1rem;
+  margin-right: 1rem;
+}
+.profile-picture-box::before {
+  position: absolute;
+  content: "";
+  width: 6rem;
+  height: 15rem;
+  background: #ECEFF1;
+  bottom: 0;
+  transform: translateX(3.5rem);
+}
+.profile-picture-box .profile-picture {
+  position: relative;
+  width: 13rem;
+  height: 13rem;
+  border-radius: 100%;
 }
 
 .code-experience {
@@ -128,7 +131,7 @@ p {
   text-indent: 0;
   grid-column: 3 span;
   color: #616161;
-  margin: 1rem 5.2rem 0;
+  margin: 1rem 2rem 0;
 }
 
 .experience-block .main-exp {
@@ -143,23 +146,31 @@ p {
 }
 
 .experience-display {
-  margin: 2rem 0 5rem;
+  margin: 5rem 0 7rem;
 }
 .experience-display .exp-header {
   display: flex;
+  flex-flow: column;
   align-items: center;
-  padding-bottom: 1rem;
 }
 .experience-display img {
   width: 7rem;
   margin-right: 1rem;
 }
 .experience-display .exp-header-info {
-  background: #ECEFF1;
-  padding: 0.8rem 8rem 0.8rem 0.8rem;
+  border-left: 0.7rem solid #ECEFF1;
+  padding: 0.8rem;
+  align-self: stretch;
 }
 .experience-display .exp-header-info span {
   color: #616161;
+}
+.experience-display h4 {
+  text-indent: 1rem;
+}
+.experience-display P {
+  text-indent: 1.5rem;
+  text-align: left;
 }
 
 /*# sourceMappingURL=style.css.map */

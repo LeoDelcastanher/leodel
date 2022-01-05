@@ -1,16 +1,19 @@
 @import "variables";
 
+html {
+}
+
 body {
   font-family: Roboto;
-  margin: 4rem 1rem;
+  margin: 4rem 0 0 0;
   color: $plainText;
-  //background: rgba(black, 0.1);
+  font-size: 16px;
   max-width: 720px;
   margin-inline: auto;
+  padding: 0 1.3rem;
 }
 
 section {
-  background: white;
 }
 
 h1 {
@@ -48,25 +51,40 @@ p {
 
 }
 
+$profilePicSize: 13rem;
 .personal-info {
-  $profilePicSize: 13rem;
   display: flex;
+  flex-flow: column;
   align-items: center;
 
-  .profile-picture-box {
-    position: relative;
-    padding-bottom: 1rem;
-    margin-right: 1rem;
+  .name-profession {
+    align-self: flex-start;
 
-    &::before {
-      position: absolute;
-      content: '';
-      width: 6rem;
-      height: 10rem;
-      background: $baseGray;
-      bottom: 0;
-      transform: translateX(($profilePicSize/2)-3rem);
+    h1 {
+      margin-bottom: 0.3rem;
     }
+
+    span {
+      margin-top: 0.3rem;
+      font-weight: normal;
+      color: $lightText;
+    }
+  }
+}
+
+.profile-picture-box {
+  position: relative;
+  padding-bottom: 1rem;
+  margin-right: 1rem;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 6rem;
+    height: 15rem;
+    background: $baseGray;
+    bottom: 0;
+    transform: translateX(($profilePicSize/2)-3rem);
   }
 
   .profile-picture {
@@ -74,17 +92,6 @@ p {
     width: $profilePicSize;
     height: $profilePicSize;
     border-radius: 100%;
-  }
-
-  .name-profession {
-    h1 {
-      margin-bottom: 0.3rem;
-    }
-    span {
-      margin-top: 0.3rem;
-      font-weight: normal;
-      color: $lightText;
-    }
   }
 }
 
@@ -100,7 +107,8 @@ p {
     text-indent: 0;
     grid-column: 3 span;
     color: $lightText;
-    margin: 1rem 5.2rem 0;
+    //margin: 1rem 5.2rem 0;
+    margin: 1rem 2rem 0;
   }
 }
 
@@ -119,13 +127,14 @@ p {
 }
 
 .experience-display {
-  margin: 2rem 0 5rem;
+  margin: 5rem 0 7rem;
   $imageSize: 7rem;
 
   .exp-header {
     display: flex;
+    flex-flow: column;
     align-items: center;
-    padding-bottom: 1rem;
+    //padding-bottom: 1rem;
   }
 
   img {
@@ -134,11 +143,22 @@ p {
   }
 
   .exp-header-info {
-    background: $baseGray;
-    padding: .8rem 8rem .8rem .8rem;
+    //background: $baseGray;
+    border-left: 0.7rem solid $baseGray;
+    padding: .8rem;
+    align-self: stretch;
 
     span {
       color: $lightText;
     }
+
+  }
+
+  h4 {
+    text-indent: 1rem;
+  }
+  P {
+    text-indent: 1.5rem;
+    text-align: left;
   }
 }
