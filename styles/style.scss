@@ -70,6 +70,15 @@ $profilePicSize: 13rem;
       color: $lightText;
     }
   }
+
+  @media (min-width: 720px) {
+    flex-flow: row;
+
+    .name-profession {
+      align-self: center;
+      padding-bottom: 2rem;
+    }
+  }
 }
 
 .profile-picture-box {
@@ -85,6 +94,7 @@ $profilePicSize: 13rem;
     background: $baseGray;
     bottom: 0;
     transform: translateX(($profilePicSize/2)-3rem);
+    transition: ease-in-out 300ms;
   }
 
   .profile-picture {
@@ -107,8 +117,13 @@ $profilePicSize: 13rem;
     text-indent: 0;
     grid-column: 3 span;
     color: $lightText;
-    //margin: 1rem 5.2rem 0;
     margin: 1rem 2rem 0;
+  }
+
+  @media (min-width: 720px) {
+    p {
+      margin: 1rem 5.2rem 0;
+    }
   }
 }
 
@@ -151,14 +166,34 @@ $profilePicSize: 13rem;
     span {
       color: $lightText;
     }
-
   }
 
-  h4 {
-    text-indent: 1rem;
+  @media (max-width: 720px) {
+    h4 {
+      text-indent: 1rem;
+    }
+    P {
+      text-indent: 1.5rem;
+      text-align: left;
+    }
   }
-  P {
-    text-indent: 1.5rem;
-    text-align: left;
+
+  @media (min-width: 720px) {
+    .exp-header {
+      flex-flow: row;
+      align-items: center;
+      padding-bottom: 1rem;
+    }
+
+    .exp-header-info {
+      background: $baseGray;
+      border: none;
+      padding-right: 6rem;
+      align-self: center;
+
+      span {
+        color: $lightText;
+      }
+    }
   }
 }

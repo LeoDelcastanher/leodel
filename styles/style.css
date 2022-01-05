@@ -97,6 +97,15 @@ p {
   font-weight: normal;
   color: #616161;
 }
+@media (min-width: 720px) {
+  .personal-info {
+    flex-flow: row;
+  }
+  .personal-info .name-profession {
+    align-self: center;
+    padding-bottom: 2rem;
+  }
+}
 
 .profile-picture-box {
   position: relative;
@@ -111,6 +120,7 @@ p {
   background: #ECEFF1;
   bottom: 0;
   transform: translateX(3.5rem);
+  transition: ease-in-out 300ms;
 }
 .profile-picture-box .profile-picture {
   position: relative;
@@ -132,6 +142,11 @@ p {
   grid-column: 3 span;
   color: #616161;
   margin: 1rem 2rem 0;
+}
+@media (min-width: 720px) {
+  .code-experience p {
+    margin: 1rem 5.2rem 0;
+  }
 }
 
 .experience-block .main-exp {
@@ -165,12 +180,30 @@ p {
 .experience-display .exp-header-info span {
   color: #616161;
 }
-.experience-display h4 {
-  text-indent: 1rem;
+@media (max-width: 720px) {
+  .experience-display h4 {
+    text-indent: 1rem;
+  }
+  .experience-display P {
+    text-indent: 1.5rem;
+    text-align: left;
+  }
 }
-.experience-display P {
-  text-indent: 1.5rem;
-  text-align: left;
+@media (min-width: 720px) {
+  .experience-display .exp-header {
+    flex-flow: row;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+  .experience-display .exp-header-info {
+    background: #ECEFF1;
+    border: none;
+    padding-right: 6rem;
+    align-self: center;
+  }
+  .experience-display .exp-header-info span {
+    color: #616161;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
