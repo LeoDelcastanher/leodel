@@ -1,0 +1,144 @@
+@import "variables";
+
+body {
+  font-family: Roboto;
+  margin: 4rem 1rem;
+  color: $plainText;
+  //background: rgba(black, 0.1);
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+section {
+  background: white;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 1.625rem;
+}
+
+h2 {
+  background: $baseGray;
+  font-size: 1.3rem;
+  display: inline-block;
+  padding: .5rem 8rem .5rem .8rem;
+  margin: 5rem 0 1rem .5rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  text-indent: 4.5rem;
+  margin: 1rem 0;
+}
+
+p {
+  line-height: 1.8rem;
+  text-align: justify;
+  margin: 0 0 1rem;
+  text-indent: 5.5rem;
+}
+
+#about-me {
+
+}
+
+.personal-info {
+  $profilePicSize: 13rem;
+  display: flex;
+  align-items: center;
+
+  .profile-picture-box {
+    position: relative;
+    padding-bottom: 1rem;
+    margin-right: 1rem;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 6rem;
+      height: 10rem;
+      background: $baseGray;
+      bottom: 0;
+      transform: translateX(($profilePicSize/2)-3rem);
+    }
+  }
+
+  .profile-picture {
+    position: relative;
+    width: $profilePicSize;
+    height: $profilePicSize;
+    border-radius: 100%;
+  }
+
+  .name-profession {
+    h1 {
+      margin-bottom: 0.3rem;
+    }
+    span {
+      margin-top: 0.3rem;
+      font-weight: normal;
+      color: $lightText;
+    }
+  }
+}
+
+.code-experience {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: .7rem;
+  text-align: center;
+  margin-top: 5rem;
+
+  p {
+    text-align: center;
+    text-indent: 0;
+    grid-column: 3 span;
+    color: $lightText;
+    margin: 1rem 5.2rem 0;
+  }
+}
+
+.experience-block {
+  .main-exp {
+    background: $baseGray;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: .5rem 0;
+  }
+
+  .exp-info {
+    color: $lightText;
+    margin: .5rem 1.4rem;
+  }
+}
+
+.experience-display {
+  margin: 2rem 0 5rem;
+  $imageSize: 7rem;
+
+  .exp-header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+  }
+
+  img {
+    width: $imageSize;
+    margin-right: 1rem;
+  }
+
+  .exp-header-info {
+    background: $baseGray;
+    padding: .8rem 8rem .8rem .8rem;
+
+    span {
+      color: $lightText;
+    }
+  }
+}
