@@ -1,0 +1,58 @@
+@import "src/assets/variables";
+
+.experience-display {
+  margin: 5rem 0 7rem;
+  $imageSize: 7rem;
+
+  .exp-header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    //padding-bottom: 1rem;
+  }
+
+  img {
+    width: $imageSize;
+    margin-right: 1rem;
+  }
+
+  .exp-header-info {
+    //background: $baseGray;
+    border-left: 0.7rem solid $baseGray;
+    padding: .8rem;
+    align-self: stretch;
+
+    span {
+      color: $lightText;
+    }
+  }
+
+  @media (max-width: 720px) {
+    h4 {
+      text-indent: 1rem;
+    }
+    P {
+      text-indent: 1.5rem;
+      text-align: left;
+    }
+  }
+
+  @media (min-width: 720px) {
+    .exp-header {
+      flex-flow: row;
+      align-items: center;
+      padding-bottom: 1rem;
+    }
+
+    .exp-header-info {
+      background: $baseGray;
+      border: none;
+      padding-right: 6rem;
+      align-self: center;
+
+      span {
+        color: $lightText;
+      }
+    }
+  }
+}

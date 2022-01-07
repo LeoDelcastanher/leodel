@@ -1,0 +1,33 @@
+@import "src/assets/variables";
+::ng-deep {
+  h1 {
+    font-weight: 900;
+    font-size: 1.625rem;
+  }
+
+  h2 {
+    background: $baseGray;
+    font-size: 1.3rem;
+    display: inline-block;
+    padding: .5rem 8rem .5rem .8rem;
+    margin: 5rem 0 1rem .5rem;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+    text-indent: 4.5rem;
+    margin: 1rem 0;
+  }
+
+  p {
+    line-height: 1.8rem;
+    text-align: justify;
+    margin: 0 0 1rem;
+    text-indent: 5.5rem;
+  }
+}
