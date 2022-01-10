@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {ExperienceBox} from "../../Interfaces/experience.box.interface";
+import {ExperienceBox} from "../../../Interfaces/experience.box.interface";
+import {MainComponentService} from "../../services/main.component.service";
 
 @Component({
   selector: 'app-main',
@@ -7,25 +8,10 @@ import {ExperienceBox} from "../../Interfaces/experience.box.interface";
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
-  academicHistory: Array<ExperienceBox> = [
-    {
-      name: 'UNISUL (College)',
-      imageSrc: '/assets/images/UNISUIL_logo.jpg',
-      imageAlt: 'UNISUL - Logo',
-      startDate: new Date('01/01/2012'),
-      endDate: new Date('01/01/2016'),
-      expTitle: 'Bachelor in Information Systems',
-      description: 'Learned the basics of coding, team management and working in groups.',
-    },
-    {
-      name: 'UFSC (Minors)\n',
-      imageSrc: '/assets/images/UFSC_logo.png',
-      imageAlt: 'UFSC - Logo',
-      startDate: new Date('01/01/2021'),
-      expTitle: 'Minors in Information Technology',
-      description: 'In 2021 I started my way into my Masters in information technology, currently ongoing online classes and getting to know the mentors and their research. My interests are in Content Detection and Analysis on Big Web Data.',
-    },
-  ];
+  myAcademic = {
+    academicHistory: [] as Array<ExperienceBox>,
+    loading: true,
+  };
 
   workHistory: Array<ExperienceBox> = [
     {
@@ -83,10 +69,19 @@ export class MainComponent implements OnInit {
     },
   ];
 
-  constructor() {
+  constructor(private mainService: MainComponentService) {
   }
 
   ngOnInit(): void {
+    this.mainService.getAcademicExperienceList().then(
+      (response) => {
+        this.myAcademic.academicHistory = response as Array<ExperienceBox>;
+      },
+      error => {
+        //@TODO
+        // }
+      }
+    );
   }
 
 }

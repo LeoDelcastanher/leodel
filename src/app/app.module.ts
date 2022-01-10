@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MainComponent } from './main/main.component';
-import { AboutMeComponent } from './main/Components/about-me/about-me.component';
-import { ExperienceBoxComponent } from './main/Components/experience-box/experience-box.component';
+import { MainComponent } from './modules/main/main.component';
+import { AboutMeComponent } from './modules/main/Components/about-me/about-me.component';
+import { ExperienceBoxComponent } from './modules/main/Components/experience-box/experience-box.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,8 @@ import { ExperienceBoxComponent } from './main/Components/experience-box/experie
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,4 @@
-@import "src/assets/variables";
+@import "../../../../../assets/variables";
 
 #about-me {
 
@@ -81,6 +81,13 @@ $profilePicSize: 13rem;
 }
 
 .experience-block {
+  grid-column: 3 span;
+  margin: 0 1.5rem 2rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
   .main-exp {
     background: $baseGray;
     font-size: 2rem;

@@ -1,7 +1,9 @@
-@import "src/assets/variables";
+@import "../../../../../assets/variables";
 
 .experience-display {
   margin: 5rem 0 7rem;
+  display: flex;
+  flex-direction: column;
   $imageSize: 7rem;
 
   .exp-header {
@@ -11,19 +13,51 @@
     //padding-bottom: 1rem;
   }
 
-  img {
+  .exp-image {
     width: $imageSize;
     margin-right: 1rem;
   }
 
   .exp-header-info {
-    //background: $baseGray;
     border-left: 0.7rem solid $baseGray;
     padding: .8rem;
     align-self: stretch;
+    display: flex;
+    flex-flow: column;
 
     span {
       color: $lightText;
+    }
+  }
+
+  &.skelly {
+    animation: breathe 2s infinite;
+    * {
+      user-select: none;
+      color: transparent !important;
+    }
+    .exp-image {
+      background: $grey400;
+      border-radius: $borderRadius;
+    }
+    h3 {
+      align-self: flex-start;
+      background: $grey700;
+      border-radius: $borderRadius;
+    }
+    span {
+      align-self: flex-start;
+      background: $grey600;
+      border-radius: $borderRadius;
+    }
+    h4 {
+      align-self: flex-start;
+      background: $grey500;
+      border-radius: $borderRadius;
+    }
+    p {
+      background: $grey400;
+      border-radius: $borderRadius;
     }
   }
 
