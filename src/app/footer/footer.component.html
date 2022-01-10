@@ -1,0 +1,15 @@
+<footer>
+<div class="back-to-top">
+  <a>
+    <span class="triangle-to-top"></span>
+  </a>
+</div>
+  <div class="user-links">
+    <ul>
+      <li *ngFor="let link of userLinks"><a target="_blank" [href]="link.url" [title]="link.title">
+        <fa-icon [icon]="link.faIcon"></fa-icon>
+        <span>{{link.label}}</span>
+      </a></li>
+    </ul>
+  </div>
+</footer>
