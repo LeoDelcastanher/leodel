@@ -17,12 +17,10 @@
   <p>{{exp.description}}</p>
 </div>
 
-<div *ngIf="list.length > 1" class="experience-display skelly">
+<div *ngIf="list.length <= 0" class="experience-display skelly">
   <div class="exp-header">
     <div class="exp-image"
          style="width: 112px; height: 112px"></div>
-<!--    <img [src]="exp.imageSrc"-->
-<!--         [alt]="exp.imageAlt" loading="lazy">-->
     <div class="exp-header-info">
       <h3>Experience Name</h3>
       <span>
