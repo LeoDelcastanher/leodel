@@ -1,7 +1,10 @@
 @import "../../../../../assets/variables";
 
-#about-me {
+:host {
+  padding-top: 2rem;
+}
 
+#about-me {
 }
 
 $profilePicSize: 13rem;
