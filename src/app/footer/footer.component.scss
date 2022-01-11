@@ -20,6 +20,11 @@ footer {
   padding: 0 0 3rem;
   text-align: center;
 
+  * {
+    user-select: none;
+    text-decoration: none;
+  }
+
   a {
     display: inline-block;
     width: 10rem;
@@ -80,6 +85,17 @@ footer {
       background: $grey400;
       opacity: 1;
       cursor: pointer;
+    }
+  }
+
+  @media (min-width: 720px) {
+    & {
+      display: flex;
+      flex-flow: column;
+      padding-right: 2rem;
+    }
+    ul {
+      align-self: flex-end;
     }
   }
 }

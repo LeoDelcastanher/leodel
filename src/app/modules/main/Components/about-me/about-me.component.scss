@@ -102,4 +102,10 @@ $profilePicSize: 13rem;
     color: $lightText;
     margin: .5rem 1.4rem;
   }
+
+  @media (min-width: 720px) {
+    & {
+      grid-column: 1 span;
+    }
+  }
 }
