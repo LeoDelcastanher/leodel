@@ -1,0 +1,25 @@
+<footer id="footer">
+  <div class="back-to-top">
+    <a href="#about-me">
+      <span class="triangle-to-top"></span>
+    </a>
+  </div>
+  <div class="user-links" id="user-links">
+    <ul>
+      <li *ngFor="let link of userLinks">
+        <a *ngIf="link?.url" target="_blank"
+           [href]="link?.url"
+           [title]="link.title">
+          <fa-icon [icon]="link.faIcon"></fa-icon>
+          <span>{{link.label}}</span>
+        </a>
+        <a *ngIf="link?.copyText" target="_blank"
+           (click)="copyToClipboard(link?.copyText!)"
+           [title]="link.title">
+          <fa-icon [icon]="link.faIcon"></fa-icon>
+          <span>{{link.label}}</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>

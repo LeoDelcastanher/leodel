@@ -1,6 +1,7 @@
 @import "assets/variables";
 
 html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -8,7 +9,12 @@ body {
   margin: 4rem 0 0 0;
   color: $plainText;
   font-size: 16px;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 0 1.3rem;
   max-width: 720px;
   margin-inline: auto;
-  padding: 0 1.3rem;
 }

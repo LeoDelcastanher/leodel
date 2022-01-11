@@ -1,7 +1,10 @@
 @import "../../../../../assets/variables";
 
-#about-me {
+:host {
+  padding-top: 2rem;
+}
 
+#about-me {
 }
 
 $profilePicSize: 13rem;
@@ -98,5 +101,11 @@ $profilePicSize: 13rem;
   .exp-info {
     color: $lightText;
     margin: .5rem 1.4rem;
+  }
+
+  @media (min-width: 720px) {
+    & {
+      grid-column: 1 span;
+    }
   }
 }

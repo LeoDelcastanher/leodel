@@ -6,18 +6,22 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './modules/main/main.component';
 import { AboutMeComponent } from './modules/main/Components/about-me/about-me.component';
 import { ExperienceBoxComponent } from './modules/main/Components/experience-box/experience-box.component';
+import { FooterComponent } from './footer/footer.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     AboutMeComponent,
-    ExperienceBoxComponent
+    ExperienceBoxComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
