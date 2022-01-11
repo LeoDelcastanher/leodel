@@ -1,16 +1,80 @@
-/* Colors */
-$main: #212121;
-$lightMain: #616161;
-$secondary: #336699ff;
-$details: #e4572eff;
-$mainBack: #d2d5ddff;
-$secondaryBack: #b8bacfff;
-$niceWhite: #F5F5F5;
+@font-face {
+  font-family: 'Roboto';
+  src: url("Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  src: url("Roboto/Roboto-Italic.ttf");
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: bold;
+  src: url("Roboto/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-style: italic;
+  src: url("Roboto/Roboto-BoldItalic.ttf");
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 300;
+  src: url("Roboto/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-style: italic;
+  src: url("Roboto/Roboto-LightItalic.ttf");
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 900;
+  src: url("Roboto/Roboto-Black.ttf");
+}
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-style: italic;
+  src: url("Roboto/Roboto-BlackItalic.ttf");
+}
 
-$grey-900: #212121;
-$grey-800: #424242;
-$grey-700: #616161;
-$grey-600: #757575;
-$grey-500: #9E9E9E;
+//** Material Colors **//
+$grey50: #FAFAFA;
+$grey100: #F5F5F5;
+$grey200: #EEEEEE;
+$grey300: #E0E0E0;
+$grey400: #BDBDBD;
+$grey500: #9E9E9E;
+$grey600: #757575;
+$grey700: #616161;
+$grey800: #424242;
+$grey900: #212121;
 
-$green-700: #388E3C;
+//** Colors **//
+$baseGray: #ECEFF1;
+$plainText: $grey800;
+$lightText: $grey700;
+$whiteText: $grey200;
+
+//** General stuff **//
+//$borderRadius: 0.5rem;
+$borderRadius: 5px;
+
+//** Animation **//
+@keyframes breathe {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
