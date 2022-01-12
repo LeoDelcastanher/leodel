@@ -9,9 +9,14 @@ footer {
   //width: 100vw;
   //max-width: 100vw;
   height: 50vh;
-  padding: 3rem 2rem 1rem;
+  padding: 3rem 2rem 3rem;
   background: $grey900;
   //margin-left: -1.3rem;
+
+  @media (min-width: 720px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .back-to-top {
@@ -43,11 +48,16 @@ footer {
       opacity: 1;
     }
   }
+
+  @media (min-width: 720px) {
+    grid-column: 2 span;
+  }
 }
 
 .toggables {
   display: flex;
   color: $whiteText;
+  margin: 0 0 1.5rem;
 
   .comic-sans-sify {
     display: flex;
@@ -62,13 +72,19 @@ footer {
       font-weight: 900;
     }
   }
+
+  @media (min-width: 720px) {
+    .comic-sans-sify {
+      align-self: flex-end;
+    }
+  }
 }
 
 .user-links {
   ul {
     list-style-type: none;
     margin: 0;
-    padding: 0 0 2rem 0;
+    padding: 0;
   }
 
   li {
@@ -112,10 +128,11 @@ footer {
       display: flex;
       flex-flow: column;
       padding-right: 2rem;
+      align-self: flex-end;
     }
     ul {
       align-self: flex-end;
-      padding: 0 0 1rem 0;
+      padding: 0;
     }
   }
 }

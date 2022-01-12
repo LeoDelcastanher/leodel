@@ -12,17 +12,20 @@ export class GlobalService {
 
   public initComicSansSify(): void {
     // @TODO check local storage
-    if(this.comicSansSify) {
+    this.comicSansSify = !localStorage.getItem(this.comicSansSifyClass);
+    if (this.comicSansSify) {
       this.toggleBodyClass(this.comicSansSifyClass);
     }
   }
 
   public toggleComicSansSify(): void {
-      this.toggleBodyClass(this.comicSansSifyClass);
+    console.warn('toggleComicSansSify()', this.comicSansSify);
+    this.comicSansSify = !this.comicSansSify;
+    this.toggleBodyClass(this.comicSansSifyClass);
+    localStorage.setItem(this.comicSansSifyClass, this.comicSansSify.toString());
   }
 
   public toggleBodyClass(className: string) {
-    console.log(`toggleBodyClass(${className})`);
     const bodyElement = document.body;
     if (bodyElement) {
       if (bodyElement.classList.contains(className)) {
