@@ -45,11 +45,30 @@ footer {
   }
 }
 
+.toggables {
+  display: flex;
+  color: $whiteText;
+
+  .comic-sans-sify {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+
+    switch {
+      margin-right: 0.8rem;
+    }
+
+    strong {
+      font-weight: 900;
+    }
+  }
+}
+
 .user-links {
   ul {
     list-style-type: none;
     margin: 0;
-    padding: 0 0 1rem 0;
+    padding: 0 0 2rem 0;
   }
 
   li {
@@ -96,6 +115,7 @@ footer {
     }
     ul {
       align-self: flex-end;
+      padding: 0 0 1rem 0;
     }
   }
 }

@@ -8,6 +8,7 @@ import { AboutMeComponent } from './modules/main/Components/about-me/about-me.co
 import { ExperienceBoxComponent } from './modules/main/Components/experience-box/experience-box.component';
 import { FooterComponent } from './footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SwitchComponent } from './shared/switch/switch.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MainComponent,
     AboutMeComponent,
     ExperienceBoxComponent,
-    FooterComponent
+    FooterComponent,
+    SwitchComponent
   ],
   imports: [
     BrowserModule,

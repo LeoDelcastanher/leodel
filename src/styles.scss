@@ -11,6 +11,10 @@ body {
   font-size: 16px;
   padding: 0;
   scroll-behavior: smooth;
+
+  &.comic-sans-sify {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
 }
 
 section {

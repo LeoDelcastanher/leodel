@@ -4,6 +4,13 @@
       <span class="triangle-to-top"></span>
     </a>
   </div>
+
+  <div class="toggables">
+    <div class="comic-sans-sify">
+      <switch [active]="globalService.comicSansSify" (click)="globalService.toggleComicSansSify()"></switch> ComicSans<strong>sify</strong>
+    </div>
+  </div>
+
   <div class="user-links" id="user-links">
     <ul>
       <li *ngFor="let link of userLinks">
