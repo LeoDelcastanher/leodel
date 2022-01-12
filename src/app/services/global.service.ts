@@ -11,10 +11,13 @@ export class GlobalService {
   }
 
   public initComicSansSify(): void {
-    // @TODO check local storage
-    this.comicSansSify = !localStorage.getItem(this.comicSansSifyClass);
-    if (this.comicSansSify) {
-      this.toggleBodyClass(this.comicSansSifyClass);
+    const savedData = localStorage.getItem(this.comicSansSifyClass);
+    if (savedData) {
+      const checkedData = JSON.parse(savedData);
+      if(checkedData) {
+        this.comicSansSify = checkedData;
+        this.toggleBodyClass(this.comicSansSifyClass);
+      }
     }
   }
 
