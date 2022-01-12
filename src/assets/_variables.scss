@@ -41,6 +41,27 @@
   src: url("Roboto/Roboto-BlackItalic.ttf");
 }
 
+@font-face {
+  font-family: 'Comic Sans Fallback';
+  src: url("ComicSans/ComicSans.ttf");
+}
+@font-face {
+  font-family: 'Comic Sans Fallback';
+  src: url("ComicSans/ComicSans-Italic.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Comic Sans Fallback';
+  src: url("ComicSans/ComicSans-bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Comic Sans Fallback';
+  src: url("ComicSans/ComicSans-bold-italic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+
 //** Material Colors **//
 $grey50: #FAFAFA;
 $grey100: #F5F5F5;
