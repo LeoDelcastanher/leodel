@@ -1,0 +1,42 @@
+@import "src/assets/variables";
+
+$switchBorderWidth: 5px;
+$switchHeight: 26px;
+$sphere: $switchHeight - 2*$switchBorderWidth;
+$lightGrayishBlue2:  hsl(223, 50%, 87%);
+$strongCyan: hsl(174, 86%, 45%);
+
+.check-switch {
+  height: $switchHeight;
+  width: 48px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  border: $switchBorderWidth solid $lightText;
+  background: $lightText;
+  position: relative;
+  transition: ease-in-out 0.2s;
+
+  .check-sphere {
+    float: left;
+    transition: ease-in-out 0.3s;
+    background: white;
+    border-radius: 100%;
+    height: $sphere;
+    width: $sphere;
+    position: relative;
+    left: 0;
+  }
+
+  &.active {
+    .check-sphere {
+      left: 100%;
+      transform: translate(-100%,0);
+    }
+  }
+
+  &:hover {
+    background: $secondary;
+    border-color: $secondary;
+    cursor: pointer;
+  }
+}
