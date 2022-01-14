@@ -1,7 +1,8 @@
 export interface MyNotification {
   title: string;
-  message: string;
-  duration: number; //milliseconds
+  message?: string;
+  duration?: number; //milliseconds
   type: "success" | "warning" | "error" | "info";
-  open: boolean;
+  open?: boolean;
+  timestamp?: number;
 }
