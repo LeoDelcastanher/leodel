@@ -35,12 +35,12 @@ export class FooterComponent implements OnInit {
       faIcon: faGithub,
       label: 'GitHub - LeoDelcastanher'
     },
-    // {
-    //   title: 'Leonardo Delcastanher´s Email - leodelcastanher@gmail.com',
-    //   copyText: 'leodelcastanher@gmail.com',
-    //   faIcon: faEnvelope,
-    //   label: 'Email - LeoDelcastanher@gmail.com'
-    // },
+    {
+      title: 'Leonardo Delcastanher´s Email - leodelcastanher@gmail.com',
+      copyText: 'leodelcastanher@gmail.com',
+      faIcon: faEnvelope,
+      label: 'Email - LeoDelcastanher@gmail.com'
+    },
   ];
 
 
@@ -59,6 +59,10 @@ export class FooterComponent implements OnInit {
       document.removeEventListener('copy', ev);
     });
     document.execCommand('copy');
+    this.globalService.addNotification({
+      title: 'Email copyed with success!',
+      type: 'success'
+    });
   }
 
 }

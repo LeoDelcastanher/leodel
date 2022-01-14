@@ -1,4 +1,5 @@
 import {Injectable} from '@angular/core';
+import {MyNotification} from "../../Interfaces/my-notification";
 
 @Injectable({
   providedIn: 'root'
@@ -7,6 +8,8 @@ export class GlobalService {
   comicSansSify: boolean = false;
   comicSansSifyClass = 'comic-sans-sify';
 
+  notifications: MyNotification[] = [];
+
   constructor() {
   }
 
@@ -14,7 +17,7 @@ export class GlobalService {
     const savedData = localStorage.getItem(this.comicSansSifyClass);
     if (savedData) {
       const checkedData = JSON.parse(savedData);
-      if(checkedData) {
+      if (checkedData) {
         this.comicSansSify = checkedData;
         this.toggleBodyClass(this.comicSansSifyClass);
       }
@@ -39,4 +42,20 @@ export class GlobalService {
       }
     }
   }
+
+  //* MyNotifications *//
+  addNotification(newNotification: MyNotification): void {
+    newNotification.timestamp = new Date().valueOf();
+    this.notifications.push(newNotification);
+    setTimeout(() => {
+      this.notifications[this.notifications.length - 1].open = true;
+    }, 100)
+  }
+
+  removeMyNotification(oldNotification: MyNotification): MyNotification[] {
+    this.notifications = this.notifications.filter(i => i.timestamp !== oldNotification.timestamp);
+    return this.notifications;
+  }
+
+  //* End of MyNotifications *//
 }

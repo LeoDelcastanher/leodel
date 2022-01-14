@@ -1,0 +1,122 @@
+@import "src/assets/variables";
+
+:host {
+  position: fixed;
+  right: 0;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  z-index: 800;
+}
+
+$tabSize: .8rem;
+.my-notification-box {
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0.3rem;
+  max-width: $tabSize;
+  padding-left: 2rem;
+  transition: ease-in-out 300ms;
+  transition-delay: 300ms;
+
+  .notification-title {
+    position: relative;
+    z-index: 501;
+    width: 17rem;
+    box-sizing: border-box;
+    background: $grey700;
+    border-left: $tabSize solid $grey900;
+    border-radius: 3px 0 0 3px;
+    padding: .5rem 1rem;
+    font-weight: 900;
+    white-space: nowrap;
+    color: $whiteText;
+    transition: ease-in-out 300ms;
+  }
+
+  .notification-message {
+    position: relative;
+    //z-index: 500;
+    margin-left: 0.505rem;
+    width: 15rem;
+    display: block;
+    box-sizing: border-box;
+    font-weight: normal;
+    white-space: break-spaces;
+    padding: 0 1rem 0 0.8rem;
+    background: $grey400;
+    border-color: $grey500;
+    border-style: solid;
+    border-width: 0 2px 2px 2px;
+    border-radius: 0 0 7px 7px;
+    overflow: hidden;
+    transition: ease-in 300ms;
+    max-height: 0;
+    top: -2rem;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.open {
+    max-width: 500px;
+    transition-delay: 0ms;
+
+    .notification-title {
+      border-left-width: 0.5rem;
+    }
+
+    .notification-message {
+      transition-delay: 300ms;
+      padding: .5rem 1rem .5rem 0.8rem;
+      max-height: 500px;
+      top: 0;
+    }
+  }
+
+  &.success {
+    .notification-title {
+      background: $green600;
+      border-left-color: $green700;
+    }
+    .notification-message {
+      background: $green50;
+      border-color: $green100;
+    }
+  }
+
+  &.error {
+    .notification-title {
+      background: $red500;
+      border-left-color: $red800;
+    }
+    .notification-message {
+      background: $red50;
+      border-color: $red100;
+    }
+  }
+
+  &.warning {
+    .notification-title {
+      background: $amber600;
+      border-left-color: $amber900;
+    }
+    .notification-message {
+      background: $amber50;
+      border-color: $amber100;
+    }
+  }
+
+  &.info {
+    .notification-title {
+      background: $lightBlue600;
+      border-left-color: $lightBlue300;
+    }
+    .notification-message {
+      background: $lightBlue50;
+      border-color: $lightBlue100;
+    }
+  }
+}
