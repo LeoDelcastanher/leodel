@@ -74,6 +74,9 @@ footer {
   }
 
   @media (min-width: 720px) {
+    & {
+      margin-bottom: 0;
+    }
     .comic-sans-sify {
       align-self: flex-end;
     }
