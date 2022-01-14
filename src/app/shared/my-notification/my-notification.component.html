@@ -1,0 +1,9 @@
+<div class="my-notification-box"
+     *ngFor="let notification of notifications"
+     (click)="notification.open = !notification.open"
+     [ngClass]="getNotificationClasses(notification)">
+  <div class="notification-title">
+    {{notification.title}}
+  </div>
+  <span class="notification-message">{{notification.message}}</span>
+</div>
