@@ -20,25 +20,24 @@ export class MainComponent implements OnInit {
   }
 
   getAcademicExp(): void {
-    this.mainService.getAcademicExperienceList().then(
-      (response) => {
-        this.academicHistory = response as Array<ExperienceBox>;
+    this.mainService.getAcademicExperienceList().subscribe(
+      (list: ExperienceBox[]) => {
+        this.academicHistory = list;
       },
-      (error) => {
+      error => {
         //@TODO
       }
     );
   }
 
   getWorkExp(): void {
-    this.mainService.getWorkExperienceList().then(
-      (response) => {
-        this.workHistory = response as Array<ExperienceBox>;
+    this.mainService.getWorkExperienceList().subscribe(
+      (list:  ExperienceBox[]) => {
+        this.workHistory = list;
       },
       (error) => {
         //@TODO
       }
     );
   }
-
 }
