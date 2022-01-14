@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {ExperienceBox} from "../../Interfaces/experience.box.interface";
-import {Observable} from "rxjs";
+import {Observable, Subscriber} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
@@ -11,43 +11,47 @@ export class MainComponentService {
   constructor(private http: HttpClient) {
   }
 
-  getAcademicExperienceList(): Promise<Array<ExperienceBox>> {
+  getAcademicExperienceList(): Observable<ExperienceBox[]> {
     console.log('getAcademicExperienceList()');
     const url = 'assets/data/academic.exp.json';
-    return new Promise((resolve, reject) => {
-      return this.http.get<Array<ExperienceBox>>(url).subscribe(
+
+    return new Observable((observer: Subscriber<ExperienceBox[]>) => {
+      return this.http.get<ExperienceBox[]>(url).subscribe(
         (response) => {
           console.log(response);
           setTimeout(() => {
-            resolve(response);
+            observer.next(response);
           }, 300)
         },
         (error) => {
           // @Todo Error Notification
           console.error(error);
           console.error('Error happened but I still have not developed a notification method.');
+          observer.error(error);
         }
       );
-    })
+    });
   }
 
-  getWorkExperienceList(): Promise<Array<ExperienceBox>> {
+  getWorkExperienceList(): Observable<ExperienceBox[]> {
     console.log('getWorkExperienceList()');
     const url = 'assets/data/work.exp.json';
-    return new Promise((resolve, reject) => {
-      return this.http.get<Array<ExperienceBox>>(url).subscribe(
+
+    return new Observable((observer: Subscriber<ExperienceBox[]>) => {
+      return this.http.get<ExperienceBox[]>(url).subscribe(
         (response) => {
           console.log(response);
           setTimeout(() => {
-            resolve(response);
+            observer.next(response);
           }, 300)
         },
         (error) => {
           // @Todo Error Notification
           console.error(error);
           console.error('Error happened but I still have not developed a notification method.');
+          observer.error(error);
         }
       );
-    })
+    });
   }
 }
