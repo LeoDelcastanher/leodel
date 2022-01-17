@@ -3,6 +3,7 @@ import {faCodepen, faGithub, faInstagram, faLinkedin} from "@fortawesome/free-br
 import {UserLink} from "../Interfaces/userLink";
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import {MyNotificationService} from "../services/my-notification.service";
+import {GlobalService} from "../services/global.service";
 
 @Component({
   selector: 'app-footer',
@@ -44,7 +45,10 @@ export class FooterComponent implements OnInit {
   ];
 
 
-  constructor(public myNotification: MyNotificationService) {
+  constructor(
+    public myNotification: MyNotificationService,
+    public globalService: GlobalService
+  ) {
   }
 
   ngOnInit(): void {
