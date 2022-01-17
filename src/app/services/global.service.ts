@@ -8,8 +8,6 @@ export class GlobalService {
   comicSansSify: boolean = false;
   comicSansSifyClass = 'comic-sans-sify';
 
-  notifications: MyNotification[] = [];
-
   constructor() {
   }
 
@@ -42,20 +40,4 @@ export class GlobalService {
       }
     }
   }
-
-  //* MyNotifications *//
-  addNotification(newNotification: MyNotification): void {
-    newNotification.timestamp = new Date().valueOf();
-    this.notifications.push(newNotification);
-    setTimeout(() => {
-      this.notifications[this.notifications.length - 1].open = true;
-    }, 100)
-  }
-
-  removeMyNotification(oldNotification: MyNotification): MyNotification[] {
-    this.notifications = this.notifications.filter(i => i.timestamp !== oldNotification.timestamp);
-    return this.notifications;
-  }
-
-  //* End of MyNotifications *//
 }

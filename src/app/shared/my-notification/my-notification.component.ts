@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {MyNotification} from "../../Interfaces/my-notification";
-import {GlobalService} from "../../services/global.service";
+import {MyNotificationService} from "../../services/my-notification.service";
 
 @Component({
   selector: 'my-notification',
@@ -8,7 +8,7 @@ import {GlobalService} from "../../services/global.service";
   styleUrls: ['./my-notification.component.scss']
 })
 export class MyNotificationComponent implements OnInit {
-  notifications: MyNotification[] = this.globalService.notifications;
+  notifications: MyNotification[] = [];
   // notifications: MyNotification[] = [
   //   {
   //     title: 'Notification Title',
@@ -40,10 +40,19 @@ export class MyNotificationComponent implements OnInit {
   //   },
   // ];
 
-  constructor(public globalService: GlobalService) {
+  constructor(public myNotification: MyNotificationService) {
   }
 
   ngOnInit(): void {
+    this.myNotification.notifications
+      .subscribe((info) => {
+        this.notifications = info;
+      });
+    // this.notificationService.notification$
+    //   .pipe(takeUntil(this.destroyStream$))
+    //   .subscribe((message: string) => {
+    //     this.doSomeMagic(message)
+    //   })
   }
 
   getNotificationClasses(notification: MyNotification) {
@@ -52,17 +61,6 @@ export class MyNotificationComponent implements OnInit {
       classes.push('open');
     }
     return classes;
-  }
-
-  advanceNotificationLifeCycle(myNot: MyNotification): void {
-    if(myNot.open) {
-      myNot.open = false;
-      setTimeout(() => {
-        this.notifications = this.globalService.removeMyNotification(myNot);
-      }, 600);
-      return;
-    }
-    myNot.open = true;
   }
 
 }

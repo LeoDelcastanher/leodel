@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {faCodepen, faGithub, faInstagram, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import {UserLink} from "../Interfaces/userLink";
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
-import {GlobalService} from "../services/global.service";
+import {MyNotificationService} from "../services/my-notification.service";
 
 @Component({
   selector: 'app-footer',
@@ -44,7 +44,7 @@ export class FooterComponent implements OnInit {
   ];
 
 
-  constructor(public globalService: GlobalService) {
+  constructor(public myNotification: MyNotificationService) {
   }
 
   ngOnInit(): void {
@@ -59,9 +59,11 @@ export class FooterComponent implements OnInit {
       document.removeEventListener('copy', ev);
     });
     document.execCommand('copy');
-    this.globalService.addNotification({
+
+    this.myNotification.addNotification({
       title: 'Email copyed with success!',
-      type: 'success'
+      type: 'success',
+      duration: true
     });
   }
 

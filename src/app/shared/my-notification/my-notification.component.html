@@ -1,6 +1,6 @@
 <div class="my-notification-box"
      *ngFor="let notification of notifications"
-     (click)="advanceNotificationLifeCycle(notification)"
+     (click)="myNotification.advanceNotificationLifeCycle(notification)"
      [ngClass]="getNotificationClasses(notification)">
   <div class="notification-title">
     {{notification.title}}
