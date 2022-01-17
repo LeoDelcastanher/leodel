@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {faCodepen, faGithub, faInstagram, faLinkedin} from "@fortawesome/free-brands-svg-icons";
-import {UserLink} from "../../Interfaces/userLink";
+import {UserLink} from "../Interfaces/userLink";
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import {GlobalService} from "../services/global.service";
 

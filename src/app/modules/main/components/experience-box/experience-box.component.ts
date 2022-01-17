@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {ExperienceBox} from "../../../../../Interfaces/experience.box.interface";
+import {ExperienceBox} from "../../../../Interfaces/experience.box.interface";
 
 @Component({
   selector: 'app-experience-box',

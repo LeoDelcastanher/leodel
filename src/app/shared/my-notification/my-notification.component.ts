@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {MyNotification} from "../../../Interfaces/my-notification";
+import {MyNotification} from "../../Interfaces/my-notification";
 import {GlobalService} from "../../services/global.service";
 
 @Component({
