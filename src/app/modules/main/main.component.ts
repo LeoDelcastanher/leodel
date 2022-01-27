@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ExperienceBox} from "../../../Interfaces/experience.box.interface";
+import {ExperienceBox} from "../../Interfaces/experience.box.interface";
 import {MainComponentService} from "../../services/main.component.service";
 
 @Component({

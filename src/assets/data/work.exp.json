@@ -5,7 +5,7 @@
     "imageAlt": "CI&T - Logo",
     "startDate": "2020-01-01T03:00:00.000Z",
     "expTitle": "Front-End Developer",
-    "description": "(CI&T bought Dextra just last year) Here I maintain an online marketplace seller software. All in Angular (TypeScript) with its own design system."
+    "description": "(CI&T bought Dextra just last year) Here I maintain an online marketplace seller software. All in Angular 2+ (TypeScript) with its own design system."
   },
   {
     "name": "HarboR Informática Industrial",
@@ -14,7 +14,7 @@
     "startDate": "2016-01-01T03:00:00.000Z",
     "endDate": "2020-01-01T03:00:00.000Z",
     "expTitle": "Front-End Developer and Designer",
-    "description": "Here is where I learned more about Front-End, RESTful services, API and fell in love with them instantly. I created from the ground up a fully responsive web app with real time data analysis. Created a unique look and feel, the whole design of the software. It was all in javascript, using AngularJs with lots of different libraries (charts, data manipulation and some visual enhancers). Since the goal was to show a huge amount of data in a small space (specially with the size of the phone screens back then) I created and implemented all sorts of smart, unique, compact and practical ways of presenting them."
+    "description": "Here is where I learned more about Front-End, RESTful services, API and fell in love with them instantly. I created from the ground up a fully responsive web app with real time data analysis. Created a unique look and feel, the whole design of the software. It was all in javascript, using AngularJs with lots of different libraries (charts, data manipulation and some visual enhancers). Since the goal was to show a huge amount of data in a small space (specially with the size of the phone screens back then) I created and implemented all sorts of smart, unique, compact and practical ways of presenting them. All the information came through APIs."
   },
   {
     "name": "Primesoft",

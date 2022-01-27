@@ -22,3 +22,45 @@ section {
   max-width: 720px;
   margin-inline: auto;
 }
+
+//* My Anchor *//
+$baseColor: $lightText;
+$hoverColor: $secondary;
+.my-anchor {
+  text-decoration: none;
+  color: $baseColor;
+  font-weight: bold;
+  position: relative;
+  max-width: fit-content;
+  margin-bottom: 0.4rem;
+  transition: ease-in-out 0.3s;
+  opacity: 0.8;
+
+  &:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    border-bottom: 2px solid $baseColor;
+    bottom: -1px;
+    left: 0;
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    width: 0;
+    border-bottom: 3px solid $hoverColor;
+    bottom: -1px;
+    left: 0;
+    transition: ease-in-out 0.1s;
+  }
+
+  &:hover {
+    color: $hoverColor;
+    opacity: 1;
+
+    &:after {
+      width: 100%;
+    }
+  }
+}

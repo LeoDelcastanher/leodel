@@ -1,6 +1,27 @@
 # Leodel
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.2.
+To view this project published on GitPages access [leodel.com.br](https://leodel.com.br)!
+
+## Project Structure
+
+```
+|-- app
+    |-- footer
+    |-- interfaces
+    |-- modules
+        |-- [+] module
+           |-- [+] components
+              |-- [+] module-components
+    |-- services
+    |-- shared
+        |-- [+] component
+    |-- core.module.ts
+|-- assets
+    |-- [+] fonts
+    |-- data (jsons)
+    |-- images
+    |-- _variables.scss
+```
 
 ## Development server
 

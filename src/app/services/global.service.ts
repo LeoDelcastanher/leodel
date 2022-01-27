@@ -1,4 +1,5 @@
 import {Injectable} from '@angular/core';
+import {MyNotification} from "../Interfaces/my-notification";
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +15,7 @@ export class GlobalService {
     const savedData = localStorage.getItem(this.comicSansSifyClass);
     if (savedData) {
       const checkedData = JSON.parse(savedData);
-      if(checkedData) {
+      if (checkedData) {
         this.comicSansSify = checkedData;
         this.toggleBodyClass(this.comicSansSifyClass);
       }

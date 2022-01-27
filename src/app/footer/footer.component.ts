@@ -1,7 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {faCodepen, faGithub, faInstagram, faLinkedin} from "@fortawesome/free-brands-svg-icons";
-import {UserLink} from "../../Interfaces/userLink";
+import {UserLink} from "../Interfaces/userLink";
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
+import {MyNotificationService} from "../services/my-notification.service";
 import {GlobalService} from "../services/global.service";
 
 @Component({
@@ -35,16 +36,19 @@ export class FooterComponent implements OnInit {
       faIcon: faGithub,
       label: 'GitHub - LeoDelcastanher'
     },
-    // {
-    //   title: 'Leonardo Delcastanher´s Email - leodelcastanher@gmail.com',
-    //   copyText: 'leodelcastanher@gmail.com',
-    //   faIcon: faEnvelope,
-    //   label: 'Email - LeoDelcastanher@gmail.com'
-    // },
+    {
+      title: 'Leonardo Delcastanher´s Email - leodelcastanher@gmail.com',
+      copyText: 'leodelcastanher@gmail.com',
+      faIcon: faEnvelope,
+      label: 'Email - LeoDelcastanher@gmail.com'
+    },
   ];
 
 
-  constructor(public globalService: GlobalService) {
+  constructor(
+    public myNotification: MyNotificationService,
+    public globalService: GlobalService
+  ) {
   }
 
   ngOnInit(): void {
@@ -59,6 +63,12 @@ export class FooterComponent implements OnInit {
       document.removeEventListener('copy', ev);
     });
     document.execCommand('copy');
+
+    this.myNotification.addNotification({
+      title: 'Email copyed with success!',
+      type: 'success',
+      duration: true
+    });
   }
 
 }
