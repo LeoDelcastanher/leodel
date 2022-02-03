@@ -8,7 +8,6 @@ import {ExperienceBox} from "../../../../Interfaces/experience.box.interface";
 })
 export class ExperienceBoxComponent implements OnInit {
 @Input() list: Array<ExperienceBox> = [];
-
   constructor() { }
 
   ngOnInit(): void {

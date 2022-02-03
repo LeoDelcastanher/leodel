@@ -1,3 +1,5 @@
+import {ProjectBox} from "./project-box.interface";
+
 export interface ExperienceBox {
   name: string;
   imageSrc: string;
@@ -6,4 +8,6 @@ export interface ExperienceBox {
   endDate?: Date;
   expTitle: string;
   description: string;
+  links?: string[];
+  projects?: ProjectBox[];
 }

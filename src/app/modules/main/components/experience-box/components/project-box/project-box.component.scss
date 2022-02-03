@@ -1,0 +1,88 @@
+@import "../../../../../../../assets/variables";
+
+.project-box {
+  padding: 1rem 0.7rem;
+  background: $grey50;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  max-height: 1.4rem;
+  transition: ease-in-out 600ms;
+
+  &.open {
+    max-height: 1500px;
+    transition: ease-in-out 1000ms;
+
+    .project-toggle {
+      transform: rotate(180deg);
+      transition: ease-in-out 600ms;
+    }
+  }
+}
+
+.project-title {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid $grey400;
+  padding-bottom: 0.2rem;
+  cursor: pointer;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  .project-name {
+    flex-grow: 2;
+    text-indent: 0;
+    margin: 0;
+  }
+
+  .project-toggle {
+    width: 16px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 600ms;
+
+    &:before {
+      position: relative;
+      max-height: 0;
+      max-width: 0;
+      content: '';
+      border-style: solid;
+      border-width: 0 4px 8px 4px;
+      border-color: transparent transparent $secondary transparent;
+    }
+  }
+}
+
+.project-description {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  img {
+    width: 5rem;
+    float: left;
+    padding: 0 1rem 1rem 0;
+  }
+
+  .description-text {
+    text-indent: 0;
+    text-align: center;
+  }
+}
+
+.main-tasks {
+  .task-list {
+    margin: 0;
+
+    li {
+      margin-bottom: 1.5em;
+    }
+  }
+}
