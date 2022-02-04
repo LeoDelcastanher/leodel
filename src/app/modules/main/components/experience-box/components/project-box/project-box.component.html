@@ -1,29 +1,33 @@
-  <div class="project-box" [ngClass]="{'open': projectsOpen}">
-    <div class="project-title" (click)="toggleProjects()">
-      <h4 class="project-name">{{project.name}}</h4>
-      <div>
-        {{project.startDate | date:'yyyy'}} -
-        <span *ngIf="project?.endDate">{{project.endDate | date:'yyyy'}}</span>
-        <span *ngIf="!project?.endDate">Now</span>
-      </div>
-      <div class="project-toggle"></div>
-    </div>
-
-    <div class="project-description">
-      <img [src]="project.imageSrc" [alt]="project.imageAlt" *ngIf="project.imageSrc">
-      <p class="description-text">
-        {{project.description}}
-      </p>
-    </div>
-
-    <div class="main-tasks">
-      <ul class="task-list">
-        <li *ngFor="let task of project.mainTasks">{{task}}</li>
-      </ul>
-    </div>
-
+<div class="project-box" [ngClass]="{'open': projectsOpen}" *ngIf="project">
+  <div class="project-title" (click)="toggleProjects()">
+    <h4 class="project-name">{{project.name}}</h4>
     <div>
-      <span *ngFor="let stack of project.stack">{{stack}}; </span>
+      {{project.startDate | date:'yyyy'}} -
+      <span *ngIf="project?.endDate">{{project.endDate | date:'yyyy'}}</span>
+      <span *ngIf="!project?.endDate">Now</span>
     </div>
-
+    <div class="project-toggle"></div>
   </div>
+
+  <div class="project-description">
+    <img [src]="project.imageSrc" [alt]="project.imageAlt" *ngIf="project.imageSrc">
+    <p class="description-text">
+      {{project.description}}
+    </p>
+  </div>
+
+  <div class="main-tasks">
+    <ul class="task-list">
+      <li *ngFor="let task of project.mainTasks">{{task}}</li>
+    </ul>
+  </div>
+
+  <div class="stack-box">
+    <stack-box *ngFor="let stack of project.stack" [stack]="stack"></stack-box>
+  </div>
+
+  <p class="project-extra" *ngIf="project.extra">
+    {{project.extra}}
+  </p>
+
+</div>

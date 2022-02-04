@@ -13,6 +13,7 @@ import { MyNotificationComponent } from './shared/my-notification/my-notificatio
 import {
   ProjectBoxComponent
 } from "./modules/main/components/experience-box/components/project-box/project-box.component";
+import {StackBoxComponent} from "./shared/stack-box/stack-box.component";
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {
     FooterComponent,
     SwitchComponent,
     MyNotificationComponent,
-    ProjectBoxComponent
+    ProjectBoxComponent,
+    StackBoxComponent
   ],
   imports: [
     BrowserModule,

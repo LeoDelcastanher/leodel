@@ -7,7 +7,7 @@ import {ProjectBox} from "../../../../../../Interfaces/project-box.interface";
   styleUrls: ['./project-box.component.scss']
 })
 export class ProjectBoxComponent {
-  @Input() project: ProjectBox | any;
+  @Input() project?: ProjectBox;
   projectsOpen = false;
 
   constructor() { }

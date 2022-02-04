@@ -17,7 +17,7 @@
   <p>{{exp.description}}</p>
 
   <div class="projects-container" *ngIf="exp.projects">
-    <h5>Projects:</h5>
+    <p>Projects:</p>
     <project-box *ngFor="let project of exp.projects" [project]="project"></project-box>
   </div>
 </div>
