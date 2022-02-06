@@ -47,7 +47,7 @@
           "Keep in touch with part of the team located across the country."
         ],
         "extra": "With this project I brought the company the importance of a well-kept front-end, and to appreciate a good looking software.",
-        "stack": ["JAVASCRIPT", "ANGULARJS", "HTML", "CSS", "SASS", "GRUNT", "GITFLOW", "BOOTSTRAP3", "FONTAWESOME", "Various JavaScript and AngularJs Libraries"]
+        "stack": ["JAVASCRIPT", "ANGULARJS", "HTML", "CSS", "SASS", "GRUNT", "GITFLOW", "BOOTSTRAP3", "FONTAWESOME"]
       },
       {
         "name": "PrintServer",
@@ -89,7 +89,7 @@
           "Develop “back-end” functions when needed (it was server side rendered)."
         ],
         "extra": "Though my creativity, my bosses saw my potential and approved me to recreate the whole projects visual, bringing it a new and fresh look. Here was where my JavaScript abilities flourished.",
-        "stack": ["PHP", "HTML", "CSS", "Zend Framework", "JAVASCRIPT", "JQuery", "Bootstrap (Twitter responsive in the time)", "Git"]
+        "stack": ["PHP", "HTML", "CSS", "ZENDFRAMEWORK", "JAVASCRIPT", "JQUERY", "BOOTSTRAP3", "GIT"]
       },
       {
         "name": "Custom Website",
@@ -102,7 +102,7 @@
           "Maintain updated through FTP servers."
         ],
         "extra": "With my creativity the clients always left happy and fulfilled.",
-        "stack": ["HTML", "CSS", "JAVASCRIPT", "JQuery"]
+        "stack": ["HTML", "CSS", "JAVASCRIPT", "JQUERY"]
       }
     ]
   },

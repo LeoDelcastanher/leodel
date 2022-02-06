@@ -1,15 +1,17 @@
 <div class="project-box" [ngClass]="{'open': projectsOpen}" *ngIf="project">
   <div class="project-title" (click)="toggleProjects()">
     <h4 class="project-name">{{project.name}}</h4>
-    <div>
-      {{project.startDate | date:'yyyy'}} -
-      <span *ngIf="project?.endDate">{{project.endDate | date:'yyyy'}}</span>
-      <span *ngIf="!project?.endDate">Now</span>
-    </div>
     <div class="project-toggle"></div>
   </div>
 
   <div class="project-description">
+
+    <div class="project-date">
+      ({{project.startDate | date:'yyyy'}} -
+      <span *ngIf="project?.endDate">{{project.endDate | date:'yyyy'}}</span>
+      <span *ngIf="!project?.endDate">Now</span>)
+    </div>
+
     <img [src]="project.imageSrc" [alt]="project.imageAlt" *ngIf="project.imageSrc">
     <p class="description-text">
       {{project.description}}
@@ -22,7 +24,7 @@
     </ul>
   </div>
 
-  <div class="stack-box">
+  <div class="stack-container">
     <stack-box *ngFor="let stack of project.stack" [stack]="stack"></stack-box>
   </div>
 
