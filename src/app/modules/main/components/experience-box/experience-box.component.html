@@ -15,6 +15,11 @@
 
   <h4>{{exp.expTitle}}</h4>
   <p>{{exp.description}}</p>
+
+  <div class="projects-container" *ngIf="exp.projects">
+    <p>Projects:</p>
+    <project-box *ngFor="let project of exp.projects" [project]="project"></project-box>
+  </div>
 </div>
 
 <div *ngIf="list.length <= 0" class="experience-display skelly">

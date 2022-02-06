@@ -1,0 +1,141 @@
+@import "../../../../../../../assets/variables";
+
+.project-box {
+  padding: 1rem 1rem 1rem 1.4rem;
+  margin: 0 -.5rem;
+  background: $grey200;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  max-height: 1.4rem;
+  transition: ease-in-out 600ms;
+  border-radius: 6px;
+  border-left: 6px solid $secondary;
+
+  &.open {
+    max-height: 1500px;
+    transition: ease-in-out 1000ms;
+
+    .project-toggle:before {
+      content: '-';
+    }
+  }
+}
+
+.project-title {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.2rem;
+  cursor: pointer;
+
+  .project-name {
+    flex-grow: 2;
+    text-indent: 0;
+    margin: 0;
+  }
+
+  .project-toggle {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 600ms;
+    font-size: 1.4rem;
+    font-weight: 900;
+    border-radius: 100%;
+
+    &:before {
+      position: relative;
+      content: '+';
+    }
+  }
+
+  //&:hover {
+  //  .project-name {
+  //    border-bottom: 1px solid $secondary;
+  //  }
+  //}
+
+  &:active,
+  &:focus {
+    .project-toggle {
+      background: $secondary;
+    }
+  }
+}
+
+.project-date {
+  font-weight: bold;
+  padding: 0.5rem 0 1.5rem;
+  color: $lightText;
+}
+
+.project-description {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-bottom: .5rem;
+
+  .project-image {
+    width: 5rem;
+    float: left;
+    margin-bottom: 1rem;
+  }
+
+  .description-text {
+    text-indent: 0;
+  }
+}
+
+.main-tasks {
+  .task-list {
+    margin: 0;
+
+    li {
+      margin-bottom: 1.5em;
+    }
+  }
+}
+
+.stack-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin: 2.5rem -.5rem 0;
+}
+
+.project-extra {
+  text-indent: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  color: $lightText;
+  text-align: left;
+}
+
+@media (min-width: 720px) {
+
+  .project-box {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .project-description {
+    display: block;
+  }
+
+  .project-image {
+    padding: 0 1em 1.5em 0;
+    margin: 0;
+  }
+
+  .description-text {
+    margin-top: 1rem;
+  }
+
+  .stack-container {
+    margin: 1rem 0 0 0;
+  }
+}

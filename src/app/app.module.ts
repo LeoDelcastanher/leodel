@@ -10,6 +10,10 @@ import { FooterComponent } from './footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SwitchComponent } from './shared/switch/switch.component';
 import { MyNotificationComponent } from './shared/my-notification/my-notification.component';
+import {
+  ProjectBoxComponent
+} from "./modules/main/components/experience-box/components/project-box/project-box.component";
+import {StackBoxComponent} from "./shared/stack-box/stack-box.component";
 
 @NgModule({
   declarations: [
@@ -19,7 +23,9 @@ import { MyNotificationComponent } from './shared/my-notification/my-notificatio
     ExperienceBoxComponent,
     FooterComponent,
     SwitchComponent,
-    MyNotificationComponent
+    MyNotificationComponent,
+    ProjectBoxComponent,
+    StackBoxComponent
   ],
   imports: [
     BrowserModule,

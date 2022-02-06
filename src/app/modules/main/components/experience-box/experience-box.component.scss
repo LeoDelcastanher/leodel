@@ -1,7 +1,7 @@
 @import "../../../../../assets/variables";
 
 .experience-display {
-  margin: 5rem 0 7rem;
+  margin: 5rem 0 5rem;
   display: flex;
   flex-direction: column;
   $imageSize: 7rem;
@@ -10,7 +10,6 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-    //padding-bottom: 1rem;
   }
 
   .exp-image {
@@ -30,36 +29,50 @@
     }
   }
 
+  .projects-container {
+    p {
+      font-weight: bold;
+    }
+  }
+
+  //* Skelly *//
   &.skelly {
     animation: breathe 2.5s infinite;
+
     * {
       user-select: none;
       color: transparent !important;
     }
+
     .exp-image {
       background: $grey400;
       border-radius: $borderRadius;
     }
+
     h3 {
       align-self: flex-start;
       background: $grey700;
       border-radius: $borderRadius;
     }
+
     span {
       align-self: flex-start;
       background: $grey600;
       border-radius: $borderRadius;
     }
+
     h4 {
       align-self: flex-start;
       background: $grey500;
       border-radius: $borderRadius;
     }
+
     p {
       background: $grey400;
       border-radius: $borderRadius;
     }
   }
+  //* End Of Skelly *//
 
   @media (max-width: 720px) {
     h4 {
