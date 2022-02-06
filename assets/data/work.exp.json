@@ -8,7 +8,6 @@
     "description": "(CI&T bought Dextra just last year) Here I maintain an online marketplace seller software. All in Angular 2+ (TypeScript) with its own design system all remotely.",
     "projects": [
       {
-        "imageSrc": "/assets/images/primesoft--provadaordem.png",
         "name": "Online Marketplace",
         "startDate": "2020-01-01T03:00:00.000Z",
         "description": "In this project we are responsible for maintaining and expanding the seller’s section. Full of forms, tables, and other methods of presenting data.",
