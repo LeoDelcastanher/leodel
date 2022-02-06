@@ -79,7 +79,7 @@
   align-items: center;
   margin-bottom: .5rem;
 
-  img {
+  .project-image {
     width: 5rem;
     float: left;
     margin-bottom: 1rem;
@@ -113,4 +113,29 @@
   margin-bottom: 0;
   color: $lightText;
   text-align: left;
+}
+
+@media (min-width: 720px) {
+
+  .project-box {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .project-description {
+    display: block;
+  }
+
+  .project-image {
+    padding: 0 1em 1.5em 0;
+    margin: 0;
+  }
+
+  .description-text {
+    margin-top: 1rem;
+  }
+
+  .stack-container {
+    margin: 1rem 0 0 0;
+  }
 }

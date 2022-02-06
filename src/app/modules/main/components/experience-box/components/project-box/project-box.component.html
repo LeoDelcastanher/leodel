@@ -5,14 +5,13 @@
   </div>
 
   <div class="project-description">
-
     <div class="project-date">
       ({{project.startDate | date:'yyyy'}} -
       <span *ngIf="project?.endDate">{{project.endDate | date:'yyyy'}}</span>
       <span *ngIf="!project?.endDate">Now</span>)
     </div>
 
-    <img [src]="project.imageSrc" [alt]="project.imageAlt" *ngIf="project.imageSrc">
+    <img class="project-image" [src]="project.imageSrc" [alt]="project.imageAlt" *ngIf="project.imageSrc">
     <p class="description-text">
       {{project.description}}
     </p>
