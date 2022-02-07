@@ -11,7 +11,11 @@
       <span *ngIf="!project?.endDate">Now</span>)
     </div>
 
-    <img class="project-image" [src]="project.imageSrc" [alt]="project.imageAlt" *ngIf="project.imageSrc">
+    <img class="project-image"
+         [src]="project.imageSrc"
+         [alt]="project.imageAlt"
+         loading="lazy"
+         *ngIf="project.imageSrc">
     <p class="description-text">
       {{project.description}}
     </p>
