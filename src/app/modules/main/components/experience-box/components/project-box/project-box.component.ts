@@ -8,7 +8,7 @@ import {ProjectBox} from "../../../../../../Interfaces/project-box.interface";
 })
 export class ProjectBoxComponent {
   @Input() project?: ProjectBox;
-  projectsOpen = true;
+  projectsOpen = false;
 
   constructor() { }
 
