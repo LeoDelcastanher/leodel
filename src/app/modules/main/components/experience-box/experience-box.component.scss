@@ -1,7 +1,7 @@
 @import "../../../../../assets/variables";
 
 .experience-display {
-  margin: 5rem 0 7rem;
+  margin: 3.5rem 0 7rem;
   display: flex;
   flex-direction: column;
   $imageSize: 7rem;
@@ -14,18 +14,18 @@
 
   .exp-image {
     width: $imageSize;
-    margin-right: 1rem;
+    margin-bottom: 1rem;
   }
 
   .exp-header-info {
-    border-left: 0.7rem solid $baseGray;
+    border-left: 0.7rem solid $darkLightSecondary;
     padding: .8rem;
     align-self: stretch;
     display: flex;
     flex-flow: column;
 
-    span {
-      color: $lightText;
+    .exp-date {
+      opacity: 0.5;
     }
   }
 
@@ -91,14 +91,19 @@
       padding-bottom: 1rem;
     }
 
+    .exp-image {
+      margin-bottom: 0;
+      margin-right: 1rem;
+    }
+
     .exp-header-info {
-      background: $baseGray;
+      background: $darkSecondary;
       border: none;
       padding-right: 6rem;
       align-self: center;
 
-      span {
-        color: $lightText;
+      .exp-date {
+        opacity: 0.5;
       }
     }
   }

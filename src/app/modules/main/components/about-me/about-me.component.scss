@@ -23,7 +23,7 @@ $profilePicSize: 13rem;
     span {
       margin-top: 0.3rem;
       font-weight: normal;
-      color: $lightText;
+      opacity: .8;
     }
 
     a {
@@ -55,7 +55,7 @@ $profilePicSize: 13rem;
     content: '';
     width: 6rem;
     height: 15rem;
-    background: $baseGray;
+    background: $darkLight;
     bottom: 0;
     transform: translateX(($profilePicSize/2)-3rem);
     transition: ease-in-out 300ms;
@@ -80,7 +80,8 @@ $profilePicSize: 13rem;
     text-align: center;
     text-indent: 0;
     grid-column: 3 span;
-    color: $lightText;
+    color: $text;
+    opacity: 0.6;
     margin: 1rem 2rem 0;
   }
 
@@ -100,14 +101,15 @@ $profilePicSize: 13rem;
   }
 
   .main-exp {
-    background: $baseGray;
+    background: $darkSecondary;
     font-size: 2rem;
     font-weight: bold;
     padding: .5rem 0;
   }
 
   .exp-info {
-    color: $lightText;
+    color: $text;
+    opacity: 0.8;
     margin: .5rem 1.4rem;
   }
 

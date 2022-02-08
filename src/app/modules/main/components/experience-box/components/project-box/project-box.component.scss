@@ -3,7 +3,7 @@
 .project-box {
   padding: 1rem 1rem 1rem 1.4rem;
   margin: 0 -.5rem;
-  background: $grey200;
+  background: $darkSecondary;
   margin-bottom: 1rem;
   overflow: hidden;
   max-height: 1.4rem;
@@ -70,7 +70,7 @@
 .project-date {
   font-weight: bold;
   padding: 0.5rem 0 1.5rem;
-  color: $lightText;
+  opacity: 0.6;
 }
 
 .project-description {
@@ -97,6 +97,7 @@
 
     li {
       margin-bottom: 1.5em;
+      opacity: 0.6;
     }
   }
 }
@@ -112,8 +113,8 @@
   text-indent: 0.5rem;
   margin-top: 2rem;
   margin-bottom: 0;
-  color: $lightText;
   text-align: left;
+  opacity: 0.4;
 }
 
 @media (min-width: 720px) {

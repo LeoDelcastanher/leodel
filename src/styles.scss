@@ -2,12 +2,13 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: $darkPrimary;
 }
 
 body {
   font-family: Roboto;
   margin: 4rem 0 0 0;
-  color: $plainText;
+  color: $text;
   font-size: 16px;
   padding: 0;
   scroll-behavior: smooth;
@@ -23,17 +24,50 @@ section {
   margin-inline: auto;
 }
 
+p {
+  opacity: .8;
+  line-height: 1.8rem;
+  text-align: justify;
+  margin: 0 0 1rem;
+  text-indent: 5.5rem;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 1.625rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  text-indent: 4.5rem;
+  margin: 1rem 0;
+}
+
+.title-2 {
+  background: $darkLight;
+  font-size: 1.3rem;
+  display: inline-block;
+  padding: .5rem 8rem .5rem .8rem;
+  margin: 5rem 0 1rem .5rem;
+}
+
 //* My Anchor *//
-$baseColor: $lightText;
+$baseColor: $text;
 $hoverColor: $secondary;
 .my-anchor {
   text-decoration: none;
   color: $baseColor;
   font-weight: bold;
   position: relative;
-  max-width: fit-content;
+  max-width: max-content;
   margin-bottom: 0.4rem;
   transition: ease-in-out 0.3s;
+  letter-spacing: 1px;
   opacity: 0.8;
 
   &:before {
