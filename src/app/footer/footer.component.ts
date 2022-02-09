@@ -40,7 +40,7 @@ export class FooterComponent implements OnInit {
       title: 'Leonardo Delcastanher´s Email - leodelcastanher@gmail.com',
       copyText: 'leodelcastanher@gmail.com',
       faIcon: faEnvelope,
-      label: 'Email - LeoDelcastanher@gmail.com'
+      label: 'LeoDelcastanher@gmail.com'
     },
   ];
 

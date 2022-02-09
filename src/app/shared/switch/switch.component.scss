@@ -11,8 +11,8 @@ $strongCyan: hsl(174, 86%, 45%);
   width: 48px;
   box-sizing: border-box;
   border-radius: 15px;
-  border: $switchBorderWidth solid $lightText;
-  background: $lightText;
+  border: $switchBorderWidth solid $grey700;
+  background: $grey700;
   position: relative;
   transition: ease-in-out 0.2s;
 
