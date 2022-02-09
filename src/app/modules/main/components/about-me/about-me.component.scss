@@ -57,6 +57,7 @@ $profilePicSize: 13rem;
     height: 15rem;
     background: $darkLight;
     bottom: 0;
+    border-radius: $borderRadius;
     transform: translateX(($profilePicSize/2)-3rem);
     transition: ease-in-out 300ms;
   }
@@ -105,6 +106,7 @@ $profilePicSize: 13rem;
     font-size: 2rem;
     font-weight: bold;
     padding: .5rem 0;
+    border-radius: $borderRadius;
   }
 
   .exp-info {
