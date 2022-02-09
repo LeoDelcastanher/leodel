@@ -8,36 +8,171 @@ import {MainComponentService} from "../../services/main.component.service";
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
-  academicHistory: Array<ExperienceBox> = [];
-  workHistory: Array<ExperienceBox> = [];
+  academicHistory: Array<ExperienceBox> = ACADEMIC_EXP;
+  workHistory: ExperienceBox[] = WORK_EXP;
 
   constructor(private mainService: MainComponentService) {
   }
 
   ngOnInit(): void {
-    this.getAcademicExp();
-    this.getWorkExp();
-  }
-
-  getAcademicExp(): void {
-    this.mainService.getAcademicExperienceList().subscribe(
-      (list: ExperienceBox[]) => {
-        this.academicHistory = list;
-      },
-      error => {
-        //@TODO
-      }
-    );
-  }
-
-  getWorkExp(): void {
-    this.mainService.getWorkExperienceList().subscribe(
-      (list:  ExperienceBox[]) => {
-        this.workHistory = list;
-      },
-      (error) => {
-        //@TODO
-      }
-    );
   }
 }
+
+const WORK_EXP: ExperienceBox[] = [
+  {
+    "name": "CI&T",
+    "imageSrc": "/assets/images/CIandT_logo.png",
+    "imageAlt": "CI&T - Logo",
+    "startDate": new Date("2020-01-01T03:00:00.000Z"),
+    "expTitle": "Front-End Developer",
+    "description": "(CI&T bought Dextra just last year) Here I maintain an online marketplace seller software. All in Angular 2+ (TypeScript) with its own design system all remotely.",
+    "projects": [
+      {
+        "name": "Online Marketplace",
+        "startDate": new Date("2020-01-01T03:00:00.000Z"),
+        "description": "In this project we are responsible for maintaining and expanding the seller’s section. Full of forms, tables, and other methods of presenting data.",
+        "mainTasks": [
+          "Maintaining an updated environment by keeping the code up to date with its main branch.",
+          "Updating older areas with new and default components and updated design.",
+          "Creating new areas and components following a Design System.",
+          "Always searching for new ways to improve.",
+          "Revising and sending my own Pull Requests."
+        ],
+        "stack": ["TYPESCRIPT", "ANGULAR", "BOOTSTRAP5", "HTML", "CSS", "SASS", "GITACTIONS", "GITFLOW"]
+      }
+    ]
+  },
+  {
+    "name": "HarboR Informática Industrial",
+    "imageSrc": "/assets/images/HarboR_logo.png",
+    "imageAlt": "HarboR Informática Industrial - Logo",
+    "startDate": new Date("2016-01-01T03:00:00.000Z"),
+    "endDate": new Date("2020-01-01T03:00:00.000Z"),
+    "expTitle": "Front-End Developer and Designer",
+    "description": "Here is where I learned more about Front-End, RESTful services, API and fell in love with them instantly. I created from the ground up a fully responsive web app with real time data analysis. Created a unique look and feel, the whole design of the software. It was all in javascript, using AngularJs with lots of different libraries (charts, data manipulation and some visual enhancers). Since the goal was to show a huge amount of data in a small space (specially with the size of the phone screens back then) I created and implemented all sorts of smart, unique, compact and practical ways of presenting them. All the information came through APIs.",
+    "projects": [
+      {
+        "name": "LiveMes",
+        "startDate": new Date("2016-01-01T03:00:00.000Z"),
+        "endDate": new Date("2020-01-01T03:00:00.000Z"),
+        "imageSrc": "/assets/images/HarboR-LiveMes-Logo.png",
+        "imageAlt": "LiveMes - Logo",
+        "description": "An online platform where the client could see in real time all the information collected in his shop floor. Through sensors, the client would collect and send us all the information gathered from his machines, and by using creative components (created by me) the client could see, analyze and take actions on the information gained that way.",
+        "mainTasks": [
+          "Create the project from the ground up.",
+          "Define the system’s architecture.",
+          "Design and Implement the look and feel of the web app.",
+          "Create new and intuitive ways to show important information.",
+          "Keep the project up to date, light and running in all possible devices.",
+          "Make all the components 100% responsive.",
+          "Keep in touch with part of the team located across the country."
+        ],
+        "extra": "With this project I brought the company the importance of a well-kept front-end, and to appreciate a good looking software.",
+        "stack": ["JAVASCRIPT", "ANGULARJS", "HTML", "CSS", "SASS", "GRUNT", "GITFLOW", "BOOTSTRAP3", "FONTAWESOME"]
+      },
+      {
+        "name": "PrintServer",
+        "startDate": new Date("2018-01-01T03:00:00.000Z"),
+        "endDate": new Date("2019-01-01T03:00:00.000Z"),
+        "description": "This project was for internal use in one of our clients. They manufactured washing machines and needed a software they could trust to follow each product though its testing and print out the result for traceability purpose.",
+        "mainTasks": [
+          "Create from the ground up the project’s front-end.",
+          "Define the system’s architecture.",
+          "Analyze the client’s website and products to create a design the matches it.",
+          "Make it compatible with very old Internet Explorer versions."
+        ],
+        "extra": "Created an extremely light weight and reliable web app capable of running in the client’s old shop floor computers.",
+        "stack": ["JAVASCRIPT", "ANGULARJS", "HTML", "CSS", "SASS", "GRUNT", "GITFLOW", "BOOTSTRAP3", "FONTAWESOME"]
+      }
+    ]
+  },
+  {
+    "name": "Primesoft",
+    "imageSrc": "/assets/images/primesoft_logo.png",
+    "imageAlt": "Primesoft - Logo",
+    "startDate": new Date("2013-01-01T03:00:00.000Z"),
+    "endDate": new Date("2016-01-01T03:00:00.000Z"),
+    "expTitle": "Web Developer",
+    "description": "I started out developing custom websites for clients, most from scratch but some using Wordpress. Later on it came to my responsibility to maintain an online test taking web app, where I used Javascript, Jquery and PHP to create a pleasant test taking experience. Always trying to help as much as I can, I started creating the digital banners and flyers for the company, using Adobe photoshop and illustrator.",
+    "projects": [
+      {
+        "name": "Prova da Ordem",
+        "startDate": new Date("2014-01-01T03:00:00.000Z"),
+        "endDate": new Date("2016-01-01T03:00:00.000Z"),
+        "imageSrc": "/assets/images/primesoft--provadaordem.png",
+        "imageAlt": "Prova da Ordem - Logo",
+        "description": "An online test taking app, where Brazilian lawyers could study and practice for their OAB exam. At it’s time it was innovating and futuristic.",
+        "mainTasks": [
+          "Maintaining the already existed project.",
+          "Create new areas and components.",
+          "Create banners, fliers and other visual elements for the brand.",
+          "Keep the website’s FTP always updated.",
+          "Develop “back-end” functions when needed (it was server side rendered)."
+        ],
+        "extra": "Though my creativity, my bosses saw my potential and approved me to recreate the whole projects visual, bringing it a new and fresh look. Here was where my JavaScript abilities flourished.",
+        "stack": ["PHP", "HTML", "CSS", "ZENDFRAMEWORK", "JAVASCRIPT", "JQUERY", "BOOTSTRAP3", "GIT"]
+      },
+      {
+        "name": "Custom Website",
+        "startDate": new Date("2013-01-01T03:00:00.000Z"),
+        "endDate": new Date("2016-01-01T03:00:00.000Z"),
+        "description": "Here I created custom websites for various clients. Some would come with a design, others I would build over website templates.",
+        "mainTasks": [
+          "Create basic responsive websites.",
+          "Create custom pictures, illustrations and icons.",
+          "Maintain updated through FTP servers."
+        ],
+        "extra": "With my creativity the clients always left happy and fulfilled.",
+        "stack": ["HTML", "CSS", "JAVASCRIPT", "JQUERY"]
+      }
+    ]
+  },
+  {
+    "name": "Outplan",
+    "imageSrc": "/assets/images/Outplan_logo.png",
+    "imageAlt": "Outplan - Logo",
+    "startDate": new Date("2013-01-01T03:00:00.000Z"),
+    "endDate": new Date("2013-01-01T03:00:00.000Z"),
+    "expTitle": "Quality Assurance",
+    "description": "While having to understand the inner workings of their software so I could test them, I also created complex SQL queries to create charts and data sheets."
+  },
+  {
+    "name": "CIDASC",
+    "imageSrc": "/assets/images/CIDASC_Logo.jpg",
+    "imageAlt": "CIDASC - Logo",
+    "startDate": new Date("2012-01-01T03:00:00.000Z"),
+    "endDate": new Date("2012-01-01T03:00:00.000Z"),
+    "expTitle": "Tech Support",
+    "description": "Here is where I worked for a service company called Bonatec, that provided tech support for CIDASC. From fixing printers to solving tech crysis through the phone with a farmer all across the state (of Santa Catarina), I did it all."
+  },
+  {
+    "name": "CDI (Now CPDI)",
+    "imageSrc": "/assets/images/CPDI-CDI_logo.png",
+    "imageAlt": "CPDI - Logo",
+    "startDate": new Date("2009-01-01T03:00:00.000Z"),
+    "endDate": new Date("2010-01-01T03:00:00.000Z"),
+    "expTitle": "Tech Support",
+    "description": "This was one of my first jobs in the tech industry. It was a voluntary work, where we would receive donations of old computers from big companies and get them running again, achieving the minimum standards for Windows xp. These computers then got placed in various CDI stations across Brazil, where underprivileged kids and adults could have access to them and the internet."
+  }
+];
+
+const ACADEMIC_EXP: ExperienceBox[] = [
+    {
+      "name": "UNISUL (College)",
+      "imageSrc": "/assets/images/UNISUL-Logo.png",
+      "imageAlt": "UNISUL - Logo",
+      "startDate": new Date("2012-01-01T02:00:00.000Z"),
+      "endDate": new Date("2016-01-01T02:00:00.000Z"),
+      "expTitle": "Bachelor in Information Systems",
+      "description": "Learned the basics of coding, team management and working in groups."
+    },
+    {
+      "name": "UFSC (Minors)",
+      "imageSrc": "/assets/images/UFSC_logo.png",
+      "imageAlt": "UFSC - Logo",
+      "startDate": new Date("2021-01-01T03:00:00.000Z"),
+      "expTitle": "Minors in Information Technology",
+      "description": "In 2021 I started my way into my Masters in information technology, currently ongoing online classes and getting to know the mentors and their research. My interests are in Content Detection and Analysis on Big Web Data."
+    }
+  ]
+;

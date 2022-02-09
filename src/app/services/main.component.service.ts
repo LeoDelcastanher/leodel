@@ -31,7 +31,7 @@ export class MainComponentService {
   }
 
   getWorkExperienceList(): Observable<ExperienceBox[]> {
-    const url = 'assets/data/work.exp.json';
+    const url = 'assets/data/work.exp.js';
     return new Observable((observer: Subscriber<ExperienceBox[]>) => {
       return this.http.get<ExperienceBox[]>(url).subscribe(
         (response) => {
