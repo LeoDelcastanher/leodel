@@ -28,7 +28,7 @@ import {StackBoxComponent} from "./shared/stack-box/stack-box.component";
     StackBoxComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     HttpClientModule,
     FontAwesomeModule
