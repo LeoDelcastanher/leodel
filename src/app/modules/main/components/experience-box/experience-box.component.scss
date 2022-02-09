@@ -1,7 +1,8 @@
 @import "../../../../../assets/variables";
 
 .experience-display {
-  margin: 5rem 0 7rem;
+  //margin: 3.5rem 0 7rem;
+  margin: 3.5rem 0 10rem;
   display: flex;
   flex-direction: column;
   $imageSize: 7rem;
@@ -14,18 +15,19 @@
 
   .exp-image {
     width: $imageSize;
-    margin-right: 1rem;
+    margin-bottom: 1rem;
   }
 
   .exp-header-info {
-    border-left: 0.7rem solid $baseGray;
+    border-left: 0.7rem solid $darkLightSecondary;
     padding: .8rem;
     align-self: stretch;
     display: flex;
     flex-flow: column;
+    border-radius: $borderRadius;
 
-    span {
-      color: $lightText;
+    .exp-date {
+      opacity: 0.5;
     }
   }
 
@@ -75,9 +77,6 @@
   //* End Of Skelly *//
 
   @media (max-width: 720px) {
-    h4 {
-      text-indent: 1rem;
-    }
     P {
       text-indent: 1.5rem;
       text-align: left;
@@ -91,14 +90,19 @@
       padding-bottom: 1rem;
     }
 
+    .exp-image {
+      margin-bottom: 0;
+      margin-right: 1rem;
+    }
+
     .exp-header-info {
-      background: $baseGray;
+      background: $darkSecondary;
       border: none;
       padding-right: 6rem;
       align-self: center;
 
-      span {
-        color: $lightText;
+      .exp-date {
+        opacity: 0.5;
       }
     }
   }

@@ -131,14 +131,15 @@ $lightBlue900: #01579B;
 
 //** Colors **//
 //$secondary: $red500;
-$secondary: $blueGrey700;
-$baseGray: #ECEFF1;
-$plainText: $grey800;
-$lightText: $grey700;
-$whiteText: $grey200;
+
+$darkPrimary: #181818;
+$darkSecondary: #212121;
+$darkLight: #3D3D3D;
+$darkLightSecondary: #AAAAAA;
+$text: #f3f3fa;
+$secondary: $red600;
 
 //** General stuff **//
-//$borderRadius: 0.5rem;
 $borderRadius: 5px;
 
 //** Animation **//

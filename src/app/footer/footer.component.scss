@@ -56,7 +56,6 @@ footer {
 
 .toggables {
   display: flex;
-  color: $whiteText;
   margin: 0 0 1.5rem;
 
   .comic-sans-sify {
@@ -99,7 +98,7 @@ footer {
     align-items: flex-end;
     align-self: flex-start;
     opacity: 0.8;
-    color: $whiteText;
+    color: inherit;
     //font-weight: 300;
     text-decoration: none;
     transition: ease-in-out 150ms;

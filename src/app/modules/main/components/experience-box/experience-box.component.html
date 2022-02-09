@@ -5,7 +5,7 @@
          [alt]="exp.imageAlt" loading="lazy">
     <div class="exp-header-info">
       <h3>{{exp.name}}</h3>
-      <span>
+      <span class="exp-date">
         {{exp.startDate | date:'yyyy'}} -
         <span *ngIf="exp?.endDate">{{exp.endDate | date:'yyyy'}}</span>
         <span *ngIf="!exp?.endDate">Now</span>
