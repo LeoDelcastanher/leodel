@@ -3,7 +3,7 @@ name: Project Deploy
 on:
   push:
     branches:
-      - 'main'
+      - 'feature/angular-universal'
 
 jobs:
   build:
