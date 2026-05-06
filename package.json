@@ -5,9 +5,7 @@
     "ng": "ng",
     "start": "node .helloWorld.js && ng serve",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "deploy": "ng deploy --cname=leodel.com.br"
+    "watch": "ng build --watch --configuration development"
   },
   "private": true,
   "dependencies": {
@@ -20,12 +18,11 @@
     "@angular/platform-browser-dynamic": "^20.3.19",
     "@angular/router": "^20.3.19",
     "@fortawesome/angular-fontawesome": "^3.0.0",
-    "@fortawesome/fontawesome-free": "^5.15.4",
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
     "@fortawesome/free-regular-svg-icons": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
-    "rxjs": "~6.6.0",
+    "rxjs": "^7.8.2",
     "tslib": "^2.2.0",
     "zone.js": "~0.15.1"
   },
@@ -33,9 +30,7 @@
     "@angular-devkit/build-angular": "^20.3.25",
     "@angular/cli": "^20.3.25",
     "@angular/compiler-cli": "^20.3.19",
-    "@types/jasmine": "~3.8.0",
-    "@types/node": "^12.11.1",
-    "jasmine-core": "~3.8.0",
+    "@types/node": "^20.19.39",
     "typescript": "~5.8.3"
   }
 }

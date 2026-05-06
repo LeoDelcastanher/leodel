@@ -1,9 +1,9 @@
 import {IconDefinition} from "@fortawesome/fontawesome-common-types";
 
 export interface UserLink {
-  title: String,
-  url?: String,
-  copyText?: String,
+  title: string,
+  url?: string,
+  copyText?: string,
   faIcon: IconDefinition,
-  label: String
+  label: string
 }

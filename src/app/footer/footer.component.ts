@@ -64,20 +64,13 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  copyToClipboard(text: String): void {
-    document.addEventListener('copy', (ev: ClipboardEvent) => {
-      // @ts-ignore
-      ev.clipboardData.setData('text/plain', text);
-      ev.preventDefault();
-      // @ts-ignore
-      document.removeEventListener('copy', ev);
-    });
-    document.execCommand('copy');
-
-    this.myNotification.addNotification({
-      title: 'Email copyed with success!',
-      type: 'success',
-      duration: true
+  copyToClipboard(text: string): void {
+    navigator.clipboard.writeText(text).then(() => {
+      this.myNotification.addNotification({
+        title: 'Email copied with success!',
+        type: 'success',
+        duration: true
+      });
     });
   }
 
