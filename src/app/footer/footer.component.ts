@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {environment} from "../../environments/environment";
 import {faCodepen, faGithub, faInstagram, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import {UserLink} from "../Interfaces/userLink";
 import {faCat, faEnvelope} from "@fortawesome/free-solid-svg-icons";
@@ -12,6 +13,8 @@ import {GlobalService} from "../services/global.service";
     standalone: false
 })
 export class FooterComponent implements OnInit {
+  version = environment.version;
+
   userLinks: Array<UserLink> = [
     {
       title: 'Leonardo Delcastanher´s Instagram - @leodelcastanher',

@@ -9,7 +9,7 @@ footer {
   //width: 100vw;
   //max-width: 100vw;
   height: 50vh;
-  padding: 3rem 2rem 3rem;
+  padding: 3rem 2rem 0rem;
   background: $grey900;
   //margin-left: -1.3rem;
 
@@ -79,6 +79,19 @@ footer {
     .comic-sans-sify {
       align-self: flex-end;
     }
+  }
+}
+
+.version {
+  opacity: 0.3;
+  font-size: 0.75rem;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  @media (min-width: 720px) {
+    grid-column: 2 span;
   }
 }
 
