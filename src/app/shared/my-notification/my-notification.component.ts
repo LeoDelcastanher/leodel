@@ -3,9 +3,10 @@ import {MyNotification} from "../../Interfaces/my-notification";
 import {MyNotificationService} from "../../services/my-notification.service";
 
 @Component({
-  selector: 'my-notification',
-  templateUrl: './my-notification.component.html',
-  styleUrls: ['./my-notification.component.scss']
+    selector: 'my-notification',
+    templateUrl: './my-notification.component.html',
+    styleUrls: ['./my-notification.component.scss'],
+    standalone: false
 })
 export class MyNotificationComponent implements OnInit {
   notifications: MyNotification[] = [];

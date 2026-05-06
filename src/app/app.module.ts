@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './modules/main/main.component';
@@ -15,25 +15,18 @@ import {
 } from "./modules/main/components/experience-box/components/project-box/project-box.component";
 import {StackBoxComponent} from "./shared/stack-box/stack-box.component";
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    MainComponent,
-    AboutMeComponent,
-    ExperienceBoxComponent,
-    FooterComponent,
-    SwitchComponent,
-    MyNotificationComponent,
-    ProjectBoxComponent,
-    StackBoxComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    FontAwesomeModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        MainComponent,
+        AboutMeComponent,
+        ExperienceBoxComponent,
+        FooterComponent,
+        SwitchComponent,
+        MyNotificationComponent,
+        ProjectBoxComponent,
+        StackBoxComponent
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        AppRoutingModule,
+        FontAwesomeModule], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { }

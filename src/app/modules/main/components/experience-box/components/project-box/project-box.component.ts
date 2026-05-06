@@ -2,9 +2,10 @@ import {Component, Input} from "@angular/core";
 import {ProjectBox} from "../../../../../../Interfaces/project-box.interface";
 
 @Component({
-  selector: 'project-box',
-  templateUrl: './project-box.component.html',
-  styleUrls: ['./project-box.component.scss']
+    selector: 'project-box',
+    templateUrl: './project-box.component.html',
+    styleUrls: ['./project-box.component.scss'],
+    standalone: false
 })
 export class ProjectBoxComponent {
   @Input() project?: ProjectBox;

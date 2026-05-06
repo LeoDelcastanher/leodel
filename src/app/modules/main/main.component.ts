@@ -3,9 +3,10 @@ import {ExperienceBox} from "../../Interfaces/experience.box.interface";
 import {MainComponentService} from "../../services/main.component.service";
 
 @Component({
-  selector: 'app-main',
-  templateUrl: './main.component.html',
-  styleUrls: ['./main.component.scss']
+    selector: 'app-main',
+    templateUrl: './main.component.html',
+    styleUrls: ['./main.component.scss'],
+    standalone: false
 })
 export class MainComponent implements OnInit {
   academicHistory: Array<ExperienceBox> = [];
