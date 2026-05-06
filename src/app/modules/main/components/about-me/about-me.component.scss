@@ -72,34 +72,18 @@ $profilePicSize: 13rem;
 
 .code-experience {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: .7rem;
+  grid-template-columns: 1fr;
+  gap: .7rem;
   text-align: center;
   margin-top: 5rem;
 
-  p {
-    text-align: center;
-    text-indent: 0;
-    grid-column: 3 span;
-    color: $text;
-    opacity: 0.6;
-    margin: 1rem 2rem 0;
-  }
-
-  @media (min-width: 720px) {
-    p {
-      margin: 1rem 5.2rem 0;
-    }
+  @media (min-width: 480px) {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 .experience-block {
-  grid-column: 3 span;
-  margin: 0 1.5rem 2rem;
-
-  &:last-of-type {
-    margin-bottom: 0;
-  }
+  margin: 0 0.4rem 2rem;
 
   .main-exp {
     background: $darkSecondary;
@@ -113,11 +97,5 @@ $profilePicSize: 13rem;
     color: $text;
     opacity: 0.8;
     margin: .5rem 1.4rem;
-  }
-
-  @media (min-width: 720px) {
-    & {
-      grid-column: 1 span;
-    }
   }
 }

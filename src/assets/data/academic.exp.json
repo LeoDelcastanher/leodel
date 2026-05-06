@@ -1,19 +1,20 @@
 [
   {
-    "name": "UNISUL (College)",
+    "name": "UNISUL",
     "imageSrc": "/assets/images/UNISUL-Logo.png",
     "imageAlt": "UNISUL - Logo",
     "startDate": "2012-01-01T02:00:00.000Z",
     "endDate": "2016-01-01T02:00:00.000Z",
-    "expTitle": "Bachelor in Information Systems",
-    "description": "Learned the basics of coding, team management and working in groups."
+    "expTitle": "Computer and Information Sciences",
+    "description": "Bachelor's degree in Computer and Information Sciences at Universidade do Sul de Santa Catarina. Learned the fundamentals of software development, team management, and working in groups."
   },
   {
-    "name": "UFSC (Minors)",
-    "imageSrc": "/assets/images/UFSC_logo.png",
-    "imageAlt": "UFSC - Logo",
-    "startDate": "2021-01-01T03:00:00.000Z",
-    "expTitle": "Minors in Information Technology",
-    "description": "In 2021 I started my way into my Masters in information technology, currently ongoing online classes and getting to know the mentors and their research. My interests are in Content Detection and Analysis on Big Web Data."
+    "name": "UDESC",
+    "imageSrc": "/assets/images/UDESC_logo.png",
+    "imageAlt": "UDESC - Logo",
+    "startDate": "2011-01-01T03:00:00.000Z",
+    "endDate": "2012-01-01T03:00:00.000Z",
+    "expTitle": "Ciências da Computação",
+    "description": "Began a Bachelor's degree in Computer Science at Universidade do Estado de Santa Catarina (UDESC) in Joinville before transferring to UNISUL to continue studies."
   }
 ]
