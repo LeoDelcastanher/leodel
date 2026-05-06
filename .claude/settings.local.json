@@ -7,7 +7,8 @@
       "Bash(npx @angular/cli@13 update @angular/core@13 @angular/cli@13 --allow-dirty --force)",
       "Bash(npx *)",
       "Bash(npm install *)",
-      "Bash(npm info *)"
+      "Bash(npm info *)",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); proj=list\\(d['projects'].keys\\(\\)\\)[0]; build=d['projects'][proj]['architect']['build']; print\\('outputPath:', build['options'].get\\('outputPath'\\)\\); print\\('project:', proj\\)\")"
     ]
   }
 }

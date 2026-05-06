@@ -1,48 +1,53 @@
-# Leodel
+# Leodel — Leonardo Delcastanher's Portfolio
 
-To view this project published on GitPages access [leodel.com.br](https://leodel.com.br)!
+[![Deploy to GitHub Pages](https://github.com/LeoDelcastanher/leodel/actions/workflows/ops.yaml/badge.svg)](https://github.com/LeoDelcastanher/leodel/actions/workflows/ops.yaml)
 
-## Project Structure
+Live at [leodel.com.br](https://leodel.com.br)
 
-```
-|-- app
-    |-- footer
-    |-- interfaces
-    |-- modules
-        |-- [+] module
-           |-- [+] components
-              |-- [+] module-components
-    |-- services
-    |-- shared
-        |-- [+] component
-    |-- core.module.ts
-|-- assets
-    |-- [+] fonts
-    |-- data (jsons)
-    |-- images
-    |-- _variables.scss
+Built with **Angular 20** · **TypeScript** · **SCSS**
+
+---
+
+## Getting started
+
+```bash
+npm install
+ng serve
 ```
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Navigate to `http://localhost:4200/`. The app reloads automatically on file changes.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+ng build
+```
 
-## Running unit tests
+Output is stored in `dist/leodel/browser/`.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+For GitHub Pages (sets the correct base href):
 
-## Running end-to-end tests
+```bash
+ng build --base-href /leodel/
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Project structure
 
-## Further help
+```
+src/app
+├── footer/
+├── modules/
+│   └── main/
+│       └── components/
+├── services/
+├── shared/
+└── Interfaces/
+src/assets
+├── data/         # JSON data files
+├── images/
+└── _variables.scss
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Deployment
+
+Pushes to `main` automatically build and deploy to GitHub Pages via the workflow at `.github/workflows/ops.yaml`.
