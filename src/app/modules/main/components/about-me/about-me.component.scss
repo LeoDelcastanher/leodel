@@ -1,4 +1,4 @@
-@import "../../../../../assets/variables";
+@use "assets/variables" as *;
 
 :host {
   padding-top: 2rem;
@@ -58,7 +58,7 @@ $profilePicSize: 13rem;
     background: $darkLight;
     bottom: 0;
     border-radius: $borderRadius;
-    transform: translateX(($profilePicSize/2)-3rem);
+    transform: translateX(calc($profilePicSize / 2 - 3rem));
     transition: ease-in-out 300ms;
   }
 

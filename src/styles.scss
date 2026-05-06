@@ -1,4 +1,4 @@
-@import "assets/variables";
+@use "assets/variables" as *;
 
 html {
   scroll-behavior: smooth;
@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   margin: 4rem 0 0 0;
   color: $text;
   font-size: 16px;
@@ -15,7 +15,7 @@ body {
   line-height: 1.5em;
 
   &.comic-sans-sify {
-    font-family: "Comic Sans MS", "Comic Sans", "Comic Sans Fallback";
+    font-family: "Comic Sans MS", "Comic Sans", "Comic Sans Fallback", cursive;
   }
 }
 
