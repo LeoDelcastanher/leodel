@@ -5,7 +5,9 @@
       "Bash(npm show *)",
       "Read(//mnt/c/Projects/Dev/**)",
       "Bash(npx @angular/cli@13 update @angular/core@13 @angular/cli@13 --allow-dirty --force)",
-      "Bash(npx *)"
+      "Bash(npx *)",
+      "Bash(npm install *)",
+      "Bash(npm info *)"
     ]
   }
 }

@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {faCodepen, faGithub, faInstagram, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import {UserLink} from "../Interfaces/userLink";
-import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
+import {faCat, faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import {MyNotificationService} from "../services/my-notification.service";
 import {GlobalService} from "../services/global.service";
 
@@ -36,6 +36,12 @@ export class FooterComponent implements OnInit {
       url: 'https://github.com/LeoDelcastanher',
       faIcon: faGithub,
       label: 'GitHub - LeoDelcastanher'
+    },
+    {
+      title: 'A website showing my fluffy cat to the world.',
+      url: 'https://gatogordo.me/',
+      faIcon: faCat,
+      label: 'GatoGordo.me'
     },
     {
       title: 'Leonardo Delcastanher´s Email - leodelcastanher@gmail.com',
