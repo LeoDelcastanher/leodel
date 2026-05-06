@@ -13,7 +13,7 @@ export class AboutMeComponent implements OnInit {
     { main: 'Automation',        info: 'N8N, CI/CD, Git, Git Flow' },
     { main: 'Frameworks',        info: 'Angular 2+, AngularJS, React' },
     { main: 'Languages',         info: 'TypeScript, JavaScript, Node.js' },
-    { main: 'UI/Design Systems', info: 'SCSS/BEM, Bootstrap, Material Design' },
+    { main: 'UI/Design Systems', info: 'SCSS/BEM, Bootstrap, Material Design, Responsive Design' },
     { main: 'Communication',     info: 'Remote-first, Fluent English, Global teams' },
   ];
 
