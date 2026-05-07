@@ -44,7 +44,11 @@
   @for (item of codeExperience; track item.main) {
     <div class="experience-block">
       <div class="main-exp">{{ item.main }}</div>
-      <div class="exp-info">{{ item.info }}</div>
+      <ul class="exp-info">
+        @for (skill of item.info; track skill) {
+          <li>{{ skill }}</li>
+        }
+      </ul>
     </div>
   }
 </div>
