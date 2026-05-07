@@ -10,7 +10,7 @@ export class AboutMeComponent implements OnInit {
 
   codeExperience = [
     { main: 'AI',                info: 'Claude Code, Codex, Figma AI' },
-    { main: 'Automation',        info: 'N8N, CI/CD, Git, Git Flow, Docker' },
+    { main: 'Automation',        info: 'N8N, CI/CD, Git, Git Flow, Docker, GitHub Actions' },
     { main: 'Frameworks',        info: 'Angular 2+, AngularJS, React' },
     { main: 'Languages',         info: 'TypeScript, JavaScript, Node.js' },
     { main: 'UI/Design Systems', info: 'SCSS/BEM, Bootstrap, Material Design, Responsive Design' },
