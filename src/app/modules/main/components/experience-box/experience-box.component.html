@@ -1,39 +1,54 @@
-<div *ngFor="let exp of list" class="experience-display">
-  <div class="exp-header">
-    <img class="exp-image"
-         [src]="exp.imageSrc"
-         [alt]="exp.imageAlt" loading="lazy">
-    <div class="exp-header-info">
-      <h3>{{exp.name}}</h3>
-      <span class="exp-date">
-        {{exp.startDate | date:'yyyy'}} -
-        <span *ngIf="exp?.endDate">{{exp.endDate | date:'yyyy'}}</span>
-        <span *ngIf="!exp?.endDate">Now</span>
-      </span>
+@for (exp of list; track exp.name) {
+  <div class="experience-display">
+    <div class="exp-header">
+      <img class="exp-image"
+           [src]="exp.imageSrc"
+           [alt]="exp.imageAlt" loading="lazy">
+      <div class="exp-header-info">
+        <h3>{{exp.name}}</h3>
+        <span class="exp-date">
+          {{exp.startDate | date:'yyyy'}} -
+          @if (exp?.endDate) {
+            {{exp.endDate | date:'yyyy'}}
+          } @else {
+            Now
+          }
+        </span>
+      </div>
     </div>
+
+    <h4>{{exp.expTitle}}</h4>
+    <p>
+      @for (segment of exp.description | heyListen; track $index) {
+        @if (segment.highlight) {
+          <hey-listen [term]="segment.text">{{ segment.text }}</hey-listen>
+        } @else {
+          {{ segment.text }}
+        }
+      }
+    </p>
+
+    @if (exp.projects) {
+      <div class="projects-container">
+        <p>Projects:</p>
+        @for (project of exp.projects; track project.name) {
+          <project-box [project]="project"></project-box>
+        }
+      </div>
+    }
   </div>
+}
 
-  <h4>{{exp.expTitle}}</h4>
-  <p>{{exp.description}}</p>
-
-  <div class="projects-container" *ngIf="exp.projects">
-    <p>Projects:</p>
-    <project-box *ngFor="let project of exp.projects" [project]="project"></project-box>
-  </div>
-</div>
-
-<div *ngIf="list.length <= 0" class="experience-display skelly">
-  <div class="exp-header">
-    <div class="exp-image"
-         style="width: 112px; height: 112px"></div>
-    <div class="exp-header-info">
-      <h3>Experience Name</h3>
-      <span>
-        0000 - 0000
-      </span>
+@if (list.length <= 0) {
+  <div class="experience-display skelly">
+    <div class="exp-header">
+      <div class="exp-image" style="width: 112px; height: 112px"></div>
+      <div class="exp-header-info">
+        <h3>Experience Name</h3>
+        <span>0000 - 0000</span>
+      </div>
     </div>
+    <h4>My Title Experience</h4>
+    <p>A brief description</p>
   </div>
-
-  <h4>My Title Experience </h4>
-  <p>A brief description</p>
-</div>
+}

@@ -5,18 +5,18 @@
     "imageAlt": "Encora Inc. - Logo",
     "startDate": "2022-03-01T03:00:00.000Z",
     "expTitle": "Frontend Engineer",
-    "description": "Leading front-end development on a large-scale enterprise platform for a US-based client, within a 10+ person cross-functional team serving hundreds of users. Inherited a codebase with no clear separation between front-end and back-end concerns — architected and implemented a near-complete layer separation, dramatically improving maintainability, testability, and team velocity.",
+    "description": "Leading [[front-end]] development on a large-scale enterprise platform for a US-based client, within a [[10+ person cross-functional team]] serving hundreds of users. Inherited a codebase with no clear separation between front-end and back-end concerns — architected and implemented a near-complete [[layer separation]], dramatically improving [[maintainability]], testability, and [[team velocity]].",
     "projects": [
       {
         "name": "Enterprise Platform",
         "startDate": "2022-03-01T03:00:00.000Z",
-        "description": "A large-scale enterprise platform for a US-based client. Responsible for leading front-end development, working within a cross-functional team and driving architectural improvements across the codebase.",
+        "description": "A large-scale enterprise platform for a US-based client. Responsible for leading [[front-end]] development, working within a [[cross-functional team]] and driving [[architectural improvements]] across the codebase.",
         "mainTasks": [
-          "Lead front-end development across the platform.",
-          "Architect and implement a near-complete layer separation between front-end and back-end concerns.",
-          "Collaborate within a 10+ person cross-functional team.",
-          "Improve maintainability, testability, and team velocity.",
-          "Conduct code reviews and enforce best practices."
+          "Lead [[front-end]] development across the platform.",
+          "Architect and implement a near-complete [[layer separation]] between front-end and back-end concerns.",
+          "Collaborate within a [[10+ person cross-functional team]].",
+          "Improve [[maintainability]], testability, and [[team velocity]].",
+          "Conduct [[code reviews]] and enforce best practices."
         ],
         "stack": ["Claude", "Claude Code", "JavaScript", "AngularJS","TYPESCRIPT", "ANGULAR", "HTML", "CSS", "SASS", "GITFLOW", "Python", "Django", "Bootstrap"]
       }
@@ -29,18 +29,18 @@
     "startDate": "2021-12-01T03:00:00.000Z",
     "endDate": "2022-03-01T03:00:00.000Z",
     "expTitle": "Frontend Developer",
-    "description": "Contributed to a B2B product with a front-end team of 10+ developers sharing a single monorepo — navigated large-scale codebase coordination, enforced UI consistency across modules, and contributed to a shared design system.",
+    "description": "Contributed to a [[B2B]] product with a [[front-end]] team of 10+ developers sharing a single [[monorepo]] — navigated large-scale codebase coordination, enforced [[UI consistency]] across modules, and contributed to a shared [[design system]].",
     "projects": [
       {
         "name": "B2B Platform",
         "startDate": "2021-12-01T03:00:00.000Z",
         "endDate": "2022-03-01T03:00:00.000Z",
-        "description": "A B2B product developed within a large monorepo shared across a 10+ developer front-end team. Focused on UI consistency and contribution to a shared design system.",
+        "description": "A [[B2B]] product developed within a large [[monorepo]] shared across a 10+ developer [[front-end]] team. Focused on [[UI consistency]] and contribution to a shared [[design system]].",
         "mainTasks": [
-          "Navigate large-scale codebase coordination in a shared monorepo.",
-          "Enforce UI consistency across modules.",
-          "Contribute to a shared design system.",
-          "Collaborate with a cross-functional team remotely."
+          "Navigate large-scale codebase coordination in a shared [[monorepo]].",
+          "Enforce [[UI consistency]] across modules.",
+          "Contribute to a shared [[design system]].",
+          "Collaborate with a [[cross-functional team]] remotely."
         ],
         "stack": ["TYPESCRIPT", "ANGULAR", "HTML", "CSS", "SASS", "GITACTIONS", "GITFLOW"]
       }
@@ -53,7 +53,7 @@
     "startDate": "2020-10-01T03:00:00.000Z",
     "endDate": "2021-12-01T03:00:00.000Z",
     "expTitle": "Frontend Developer",
-    "description": "Maintained an online marketplace seller software built in Angular 2+ (TypeScript) with its own design system, working fully remotely. Dextra was later acquired by CI&T.",
+    "description": "Maintained an online marketplace seller software built in [[Angular 2+]] ([[TypeScript]]) with its own [[design system]], working fully [[remote]]. Dextra was later acquired by CI&T.",
     "projects": [
       {
         "name": "Online Marketplace",
@@ -62,10 +62,10 @@
         "description": "Responsible for maintaining and expanding the seller's section of an online marketplace platform. Full of forms, tables, and other methods of presenting data.",
         "mainTasks": [
           "Maintaining an updated environment by keeping the code up to date with its main branch.",
-          "Updating older areas with new and default components and updated design.",
-          "Creating new areas and components following a Design System.",
+          "Updating older areas with new and default components and updated [[design system]].",
+          "Creating new areas and [[components]] following a [[Design System]].",
           "Always searching for new ways to improve.",
-          "Revising and sending my own Pull Requests."
+          "Revising and sending my own [[Pull Requests]]."
         ],
         "stack": ["TYPESCRIPT", "ANGULAR", "BOOTSTRAP5", "HTML", "CSS", "SASS", "GITACTIONS", "GITFLOW"]
       }
@@ -78,7 +78,7 @@
     "startDate": "2016-02-01T03:00:00.000Z",
     "endDate": "2020-10-01T03:00:00.000Z",
     "expTitle": "Frontend Manager",
-    "description": "Led a 3-person front-end team building shop floor engineering software for the manufacturing industry, delivering stable, long-running enterprise interfaces in AngularJS. Managed the development lifecycle from planning to delivery across multiple concurrent projects. Created from the ground up a fully responsive web app with real-time data analysis — designing the look and feel, defining the architecture, and implementing smart, compact ways to present large amounts of data.",
+    "description": "Led a [[3-person front-end team]] building shop floor engineering software for the manufacturing industry, delivering stable, long-running enterprise interfaces in [[AngularJS]]. Managed the [[development lifecycle]] from planning to delivery across multiple concurrent projects. Created from the ground up a fully [[responsive]] web app with [[real-time]] data analysis — designing the look and feel, defining the [[architecture]], and implementing smart, compact ways to present large amounts of data.",
     "projects": [
       {
         "name": "LiveMes",
@@ -86,14 +86,14 @@
         "endDate": "2020-10-01T03:00:00.000Z",
         "imageSrc": "/assets/images/HarboR-LiveMes-Logo.png",
         "imageAlt": "LiveMes - Logo",
-        "description": "An online platform where the client could see in real time all the information collected in his shop floor. Through sensors, the client would collect and send us all the information gathered from his machines, and by using creative components (created by me) the client could see, analyze and take actions on the information gained that way.",
+        "description": "An online platform where the client could see in [[real-time]] all the information collected on the shop floor. Through sensors, the client would collect and send all the information gathered from machines, and by using creative [[components]] the client could see, analyze and take actions on the data.",
         "mainTasks": [
-          "Create the project from the ground up.",
-          "Define the system's architecture.",
-          "Design and Implement the look and feel of the web app.",
+          "Create the project [[from the ground up]].",
+          "Define the system's [[architecture]].",
+          "Design and Implement the [[look and feel]] of the web app.",
           "Create new and intuitive ways to show important information.",
           "Keep the project up to date, light and running in all possible devices.",
-          "Make all the components 100% responsive.",
+          "Make all the [[components]] 100% [[responsive]].",
           "Keep in touch with part of the team located across the country."
         ],
         "extra": "With this project I brought the company the importance of a well-kept front-end, and to appreciate a good looking software.",
@@ -103,11 +103,11 @@
         "name": "PrintServer",
         "startDate": "2018-01-01T03:00:00.000Z",
         "endDate": "2019-01-01T03:00:00.000Z",
-        "description": "This project was for internal use in one of our clients. They manufactured washing machines and needed a software they could trust to follow each product though its testing and print out the result for traceability purpose.",
+        "description": "This project was for internal use in one of our clients. They manufactured washing machines and needed a software they could trust to follow each product through its testing and print out the result for traceability purpose.",
         "mainTasks": [
-          "Create from the ground up the project's front-end.",
-          "Define the system's architecture.",
-          "Analyze the client's website and products to create a design the matches it.",
+          "Create [[from the ground up]] the project's front-end.",
+          "Define the system's [[architecture]].",
+          "Analyze the client's website and products to create a design that matches it.",
           "Make it compatible with very old Internet Explorer versions."
         ],
         "extra": "Created an extremely light weight and reliable web app capable of running in the client's old shop floor computers.",
@@ -122,7 +122,7 @@
     "startDate": "2013-10-01T03:00:00.000Z",
     "endDate": "2016-01-01T03:00:00.000Z",
     "expTitle": "Frontend Developer",
-    "description": "Started out developing custom websites for clients, most from scratch but some using WordPress. Later took responsibility for maintaining an online test-taking web app using JavaScript, jQuery and PHP. Also created digital banners and flyers for the company using Adobe Photoshop and Illustrator.",
+    "description": "Started out developing custom websites for clients, most from scratch but some using [[WordPress]]. Later took responsibility for maintaining an online test-taking web app using [[JavaScript]], [[jQuery]] and [[PHP]]. Also created digital banners and flyers for the company using [[Adobe Photoshop]] and [[Illustrator]].",
     "projects": [
       {
         "name": "Prova da Ordem",
@@ -130,15 +130,15 @@
         "endDate": "2016-01-01T03:00:00.000Z",
         "imageSrc": "/assets/images/primesoft--provadaordem.png",
         "imageAlt": "Prova da Ordem - Logo",
-        "description": "An online test taking app, where Brazilian lawyers could study and practice for their OAB exam. At it's time it was innovating and futuristic.",
+        "description": "An online test taking app, where Brazilian lawyers could study and practice for their OAB exam. At its time it was innovating and futuristic.",
         "mainTasks": [
           "Maintaining the already existed project.",
-          "Create new areas and components.",
+          "Create new areas and [[components]].",
           "Create banners, fliers and other visual elements for the brand.",
           "Keep the website's FTP always updated.",
-          "Develop 'back-end' functions when needed (it was server side rendered)."
+          "Develop back-end functions when needed (it was [[server side rendered]])."
         ],
-        "extra": "Though my creativity, my bosses saw my potential and approved me to recreate the whole projects visual, bringing it a new and fresh look. Here was where my JavaScript abilities flourished.",
+        "extra": "Through my creativity, my bosses saw my potential and approved me to recreate the whole project's visual, bringing it a new and fresh look. Here was where my [[JavaScript]] abilities flourished.",
         "stack": ["PHP", "HTML", "CSS", "ZENDFRAMEWORK", "JAVASCRIPT", "JQUERY", "BOOTSTRAP3", "GIT"]
       },
       {
@@ -147,7 +147,7 @@
         "endDate": "2016-01-01T03:00:00.000Z",
         "description": "Here I created custom websites for various clients. Some would come with a design, others I would build over website templates.",
         "mainTasks": [
-          "Create basic responsive websites.",
+          "Create basic [[responsive]] websites.",
           "Create custom pictures, illustrations and icons.",
           "Maintain updated through FTP servers."
         ],
@@ -163,7 +163,7 @@
     "startDate": "2013-01-01T03:00:00.000Z",
     "endDate": "2013-10-01T03:00:00.000Z",
     "expTitle": "Support & QA",
-    "description": "Client support and SQL script developer. While understanding the inner workings of their e-Procurement software to test it, also created complex SQL queries to generate charts and data sheets."
+    "description": "Client support and [[SQL]] script developer. While understanding the inner workings of their e-Procurement software to test it, also created complex [[SQL queries]] to generate charts and data sheets."
   },
   {
     "name": "CIDASC",
@@ -172,7 +172,7 @@
     "startDate": "2012-01-01T03:00:00.000Z",
     "endDate": "2012-09-01T03:00:00.000Z",
     "expTitle": "Tech Support",
-    "description": "Here is where I worked for a service company called Bonatec, that provided tech support for CIDASC. From fixing printers to solving tech crises through the phone with a farmer all across the state of Santa Catarina, I did it all."
+    "description": "Here is where I worked for a service company called Bonatec, that provided [[tech support]] for CIDASC. From fixing printers to solving tech crises through the phone with a farmer all across the state of Santa Catarina, I did it all."
   },
   {
     "name": "CDI (Now CPDI)",
@@ -181,6 +181,6 @@
     "startDate": "2009-01-01T03:00:00.000Z",
     "endDate": "2010-01-01T03:00:00.000Z",
     "expTitle": "Tech Support",
-    "description": "This was one of my first jobs in the tech industry. It was a voluntary work, where we would receive donations of old computers from big companies and get them running again, achieving the minimum standards for Windows XP. These computers then got placed in various CDI stations across Brazil, where underprivileged kids and adults could have access to them and the internet."
+    "description": "This was one of my first jobs in the tech industry. It was [[voluntary work]], where we would receive donations of old computers from big companies and get them running again, achieving the minimum standards for Windows XP. These computers then got placed in various CDI stations across Brazil, where underprivileged kids and adults could have access to them and the internet."
   }
 ]

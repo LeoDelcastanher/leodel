@@ -1,38 +1,62 @@
-<div class="project-box" [ngClass]="{'open': projectsOpen}" *ngIf="project">
-  <div class="project-title" (click)="toggleProjects()">
-    <h4 class="project-name">{{project.name}}</h4>
-    <div class="project-toggle"></div>
-  </div>
-
-  <div class="project-description">
-    <div class="project-date">
-      ({{project.startDate | date:'yyyy'}} -
-      <span *ngIf="project?.endDate">{{project.endDate | date:'yyyy'}}</span>
-      <span *ngIf="!project?.endDate">Now</span>)
+@if (project) {
+  <div class="project-box" [ngClass]="{'open': projectsOpen}">
+    <div class="project-title" (click)="toggleProjects()">
+      <h4 class="project-name">{{project.name}}</h4>
+      <div class="project-toggle"></div>
     </div>
 
-    <img class="project-image"
-         [src]="project.imageSrc"
-         [alt]="project.imageAlt"
-         loading="lazy"
-         *ngIf="project.imageSrc">
-    <p class="description-text">
-      {{project.description}}
-    </p>
+    <div class="project-description">
+      <div class="project-date">
+        ({{project.startDate | date:'yyyy'}} -
+        @if (project.endDate) {
+          {{project.endDate | date:'yyyy'}}
+        } @else {
+          Now
+        })
+      </div>
+
+      @if (project.imageSrc) {
+        <img class="project-image"
+             [src]="project.imageSrc"
+             [alt]="project.imageAlt"
+             loading="lazy">
+      }
+
+      <p class="description-text">
+        @for (segment of project.description | heyListen; track $index) {
+          @if (segment.highlight) {
+            <hey-listen [term]="segment.text">{{ segment.text }}</hey-listen>
+          } @else {
+            {{ segment.text }}
+          }
+        }
+      </p>
+    </div>
+
+    <div class="main-tasks">
+      <ul class="task-list">
+        @for (task of project.mainTasks; track $index) {
+          <li>
+            @for (segment of task | heyListen; track $index) {
+              @if (segment.highlight) {
+                <hey-listen [term]="segment.text">{{ segment.text }}</hey-listen>
+              } @else {
+                {{ segment.text }}
+              }
+            }
+          </li>
+        }
+      </ul>
+    </div>
+
+    <div class="stack-container">
+      @for (stack of project.stack; track stack) {
+        <stack-box [stack]="stack"></stack-box>
+      }
+    </div>
+
+    @if (project.extra) {
+      <p class="project-extra">{{project.extra}}</p>
+    }
   </div>
-
-  <div class="main-tasks">
-    <ul class="task-list">
-      <li *ngFor="let task of project.mainTasks">{{task}}</li>
-    </ul>
-  </div>
-
-  <div class="stack-container">
-    <stack-box *ngFor="let stack of project.stack" [stack]="stack"></stack-box>
-  </div>
-
-  <p class="project-extra" *ngIf="project.extra">
-    {{project.extra}}
-  </p>
-
-</div>
+}

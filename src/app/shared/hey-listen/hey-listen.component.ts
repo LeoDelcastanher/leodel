@@ -1,4 +1,4 @@
-import { Component, computed, ElementRef, HostListener, inject, OnDestroy, OnInit } from '@angular/core';
+import { Component, computed, ElementRef, HostListener, inject, Input, OnDestroy, OnInit } from '@angular/core';
 import { HeyListenService } from '../../services/hey-listen.service';
 import { MyNotificationService } from '../../services/my-notification.service';
 
@@ -14,13 +14,17 @@ export class HeyListenComponent implements OnInit, OnDestroy {
   private readonly heyListenService = inject(HeyListenService);
   private readonly notificationService = inject(MyNotificationService);
 
-  term = '';
+  @Input() term = '';
   isActive = computed(() =>
     this.heyListenService.activeTerm()?.toLowerCase() === this.term.toLowerCase()
   );
 
   ngOnInit(): void {
-    this.term = this.el.nativeElement.textContent.trim();
+    // Fallback for static usages like <hey-listen>Angular</hey-listen>
+    // where no [term] input is provided (textContent is available for static nodes)
+    if (!this.term) {
+      this.term = this.el.nativeElement.textContent.trim();
+    }
     this.heyListenService.register(this);
   }
 

@@ -46,4 +46,8 @@ Clicking a term highlights **all other matching instances** on the page and cycl
 - [x] Wrap key terms in `<hey-listen>` in the HTML
   - [x] About Me paragraphs (Angular, React, TypeScript, AI, Design Systems, Component Architecture, sprint planning, code review, Agile/Scrum, front-end, 11 years)
   - [x] Job title / subtitle span
-- [ ] Add `<hey-listen>` tags to Job History entries
+- [x] Add `<hey-listen>` tags to Job History entries
+  - [x] Created `HeyListenPipe` to parse `[[term]]` markers into `TextSegment[]`
+  - [x] Migrated `MainComponent` from HTTP service to direct JSON imports
+  - [x] Updated `experience-box` and `project-box` templates to render highlights
+  - [x] Added `[[term]]` markers to `work.exp.json` and `academic.exp.json`

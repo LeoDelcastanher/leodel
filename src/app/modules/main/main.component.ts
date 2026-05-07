@@ -1,44 +1,15 @@
-import {Component, OnInit} from '@angular/core';
-import {ExperienceBox} from "../../Interfaces/experience.box.interface";
-import {MainComponentService} from "../../services/main.component.service";
+import { Component } from '@angular/core';
+import { ExperienceBox } from '../../Interfaces/experience.box.interface';
+import workExpData from '../../../assets/data/work.exp.json';
+import academicExpData from '../../../assets/data/academic.exp.json';
 
 @Component({
-    selector: 'app-main',
-    templateUrl: './main.component.html',
-    styleUrls: ['./main.component.scss'],
-    standalone: false
+  selector: 'app-main',
+  templateUrl: './main.component.html',
+  styleUrls: ['./main.component.scss'],
+  standalone: false
 })
-export class MainComponent implements OnInit {
-  academicHistory: Array<ExperienceBox> = [];
-  workHistory: Array<ExperienceBox> = [];
-
-  constructor(private mainService: MainComponentService) {
-  }
-
-  ngOnInit(): void {
-    this.getAcademicExp();
-    this.getWorkExp();
-  }
-
-  getAcademicExp(): void {
-    this.mainService.getAcademicExperienceList().subscribe(
-      (list: ExperienceBox[]) => {
-        this.academicHistory = list;
-      },
-      error => {
-        //@TODO
-      }
-    );
-  }
-
-  getWorkExp(): void {
-    this.mainService.getWorkExperienceList().subscribe(
-      (list:  ExperienceBox[]) => {
-        this.workHistory = list;
-      },
-      (error) => {
-        //@TODO
-      }
-    );
-  }
+export class MainComponent {
+  workHistory: ExperienceBox[] = workExpData as unknown as ExperienceBox[];
+  academicHistory: ExperienceBox[] = academicExpData as unknown as ExperienceBox[];
 }
