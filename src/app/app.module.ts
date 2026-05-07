@@ -14,6 +14,7 @@ import {
   ProjectBoxComponent
 } from "./modules/main/components/experience-box/components/project-box/project-box.component";
 import {StackBoxComponent} from "./shared/stack-box/stack-box.component";
+import {HeyListenComponent} from "./shared/hey-listen/hey-listen.component";
 
 @NgModule({ declarations: [
         AppComponent,
@@ -28,5 +29,6 @@ import {StackBoxComponent} from "./shared/stack-box/stack-box.component";
     ],
     bootstrap: [AppComponent], imports: [BrowserModule,
         AppRoutingModule,
-        FontAwesomeModule], providers: [provideHttpClient(withInterceptorsFromDi())] })
+        FontAwesomeModule,
+        HeyListenComponent], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { }
