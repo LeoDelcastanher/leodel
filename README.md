@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="src/assets/icons/ctrl-leo-del.svg" alt="Ctrl Leo Del logo" width="160">
+</p>
+
 # Leodel — Leonardo Delcastanher's Portfolio
 
 [![Deploy to GitHub Pages](https://github.com/LeoDelcastanher/leodel/actions/workflows/ops.yaml/badge.svg)](https://github.com/LeoDelcastanher/leodel/actions/workflows/ops.yaml)
